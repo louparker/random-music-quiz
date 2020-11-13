@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+/* Colors
+
+Green:      #33673b
+Dark Green: #19231a
+Teal:       #029c8b
+Brown:      #320c0f
+Orange:     #cc3f0c
+Grey:       #e5e5e5
+Purple:     #541388
+
+*/
+
+/* General Page Utilities */
+:root {
+    background-color: #e5e5e5;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Londrina Solid", "Sans Serif";
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Home Page */
+
+/* Game Title */
+h1 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: #33673b;
+    text-align: center;
+    position: relative;
+    bottom: 10rem;
+}
+
+h1 > span {
+    display: flex;
+    justify-content: center;
+}
+
+/* Rules */
+
+.rules-container {
+    position: relative;
+    bottom: 7rem;
+}
+
+.rules-container > p {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    color: #33673b;
+}
+
+/* Start Game Buttoms */
+
+.start-game-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a:link {
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
+a:visited {
+    color: #e5e5e5;
+}
+
+.easy-button {
+    display: flex;
+    padding: 2rem 4rem;
+    font-size: 5rem;
+    width: 20rem;
+    height: 13rem;
+    background-color: #029c8b;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.medium-button {
+    display: flex;
+    padding: 2rem 4rem;
+    font-size: 5rem;
+    width: 20rem;
+    height: 13rem;
+    background-color: #320c0f;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hard-button {
+    display: flex;
+    padding: 2rem 4rem;
+    font-size: 5rem;
+    width: 20rem;
+    height: 13rem;
+    background-color: #cc3f0c;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* High Scores Button */
+
+.high-score-button {
+    display: flex;
+    padding: 2rem 4rem;
+    font-size: 2.4rem;
+    width: 15rem;
+    height: 7rem;
+    background-color: #541388;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    top: 5rem;
+}
