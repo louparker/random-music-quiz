@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over:(</title>
+    <!-- scripts -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/gameover.css">
+</head>
+<body>
+    <div class="container">
+        <div id="gameover">
+            <!-- title -->
+            <h1 class="score__title">FINAL SCORE</h1>
+
+            <!-- score box -->
+            <div class="score-box">
+                <div class="score__container">
+                    <p class="score__text">
+                        18
+                    </p>
+                </div>
+            </div>
+
+            <!-- user input -->
+            <form>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            </form>
+
+            <!-- option buttons -->
+            <div class="option__btns">
+                <a href="#" class="option__btn">PLAY AGAIN</a>
+
+                <!-- form btn -->
+                <button type="submit" form="name" id="saveScoreBtn" class="option__btn" onclick="saveHighScore(event)">Save</button>
+
+                <a href="#" class="option__btn">GO HOME</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/gameover.js"></script>
+</body>
+</html>

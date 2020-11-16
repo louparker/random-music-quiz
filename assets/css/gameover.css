@@ -1,0 +1,36 @@
+#gameover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* title */
+.score__title {
+    position: absolute;
+    top: 5rem;
+}
+
+/* score box */
+.score__container {
+    background: #19231a;
+    color: #e5e5e5;
+    width: 23rem;
+    height: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.score__text {
+    font-size: 15rem;
+    font-weight: 300;
+}
+
+/* name input */
+input {
+    width: 20rem;
+    height: 5rem;
+    font-size: 3rem;
+}
