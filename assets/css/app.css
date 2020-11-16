@@ -2,13 +2,13 @@
 
 /* Colors
 
-Green:      #33673b
-Dark Green: #19231a
-Teal:       #029c8b
-Brown:      #320c0f
-Orange:     #cc3f0c
-Grey:       #e5e5e5
-Purple:     #541388
+Green:      #33673b text color
+Dark Green: #19231a secondary background/text color
+Teal:       #029c8b accent color
+Brown:      #320c0f accent color
+Orange:     #cc3f0c accent color
+Grey:       #e5e5e5 background color
+Purple:     #541388 accent color
 
 */
 
@@ -82,7 +82,7 @@ a:visited {
     color: #e5e5e5;
 }
 
-.easy-button {
+.easy__btn {
     display: flex;
     padding: 2rem 4rem;
     font-size: 5rem;
@@ -94,7 +94,7 @@ a:visited {
     align-items: center;
 }
 
-.medium-button {
+.medium__btn {
     display: flex;
     padding: 2rem 4rem;
     font-size: 5rem;
@@ -106,7 +106,7 @@ a:visited {
     align-items: center;
 }
 
-.hard-button {
+.hard__btn {
     display: flex;
     padding: 2rem 4rem;
     font-size: 5rem;
@@ -120,7 +120,7 @@ a:visited {
 
 /* High Scores Button */
 
-.high-score-button {
+.highscore__btn {
     display: flex;
     padding: 2rem 4rem;
     font-size: 2.4rem;
