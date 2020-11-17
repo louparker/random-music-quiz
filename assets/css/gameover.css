@@ -8,7 +8,8 @@
 /* title */
 .score__title {
     display: flex;
-    align-items: flex-start;
+    font-size: 14rem;
+    margin-top: 3rem;
 }
 
 /* score box */
@@ -21,7 +22,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    margin-top: 2rem;
 }
 
 .score__text {
