@@ -26,7 +26,7 @@
 
 .score__text {
     font-size: 15rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* name input */
@@ -49,9 +49,9 @@ input {
 .option__btn {
     display: flex;
     padding: 2rem 4rem;
-    font-size: 2.5rem;
-    width: 20rem;
-    height: 13rem;
+    font-size: 4rem;
+    width: 26rem;
+    height: 16rem;
     background-color: #19231a;
     border-radius: 2rem;
     justify-content: center;

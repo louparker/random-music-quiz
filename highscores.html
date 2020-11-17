@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highscores</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/highscores.css">
+</head>
+<body>
+    <div class="container">
+        <div id="highscores">
+            <!-- title -->
+            <h1 class="highscores__title">HIGHSCORES</h1>
+
+            <!-- level titles -->
+            <div class="level__titles">
+                <h2 class="level__title">EASY</h2>
+                <h2 class="level__title">MEDIUM</h2>
+                <h2 class="level__title">HARD</h2>
+            </div>
+
+            <!-- score boxes -->
+            <div class="score-boxes__container">
+                <div class="score-box__container">
+                    <ul id="easy-scores"></ul>
+                </div>
+                <div class="score-box__container">
+                    <ul id="medium-scores"></ul>
+                </div>
+                <div class="score-box__container">
+                    <ul id="hard-scores"></ul>
+                </div>
+            </div>
+
+            <!-- home button -->
+            <div class="go-home-btn__container">
+                <a href="index.html" class="go-home__btn">GO HOME</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/highscores.js"></script>
+</body>
+</html>
