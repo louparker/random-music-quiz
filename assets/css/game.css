@@ -103,3 +103,41 @@
 .choice__container:nth-child(4) {
     background-color: #541388;
 }
+
+/* media queries */
+
+@media (max-width: 360px) {  
+    
+}
+
+@media (min-width: 361px) {  
+    
+}
+
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {  
+    
+}
+
+@media (min-width: 992px) { 
+ 
+}
+
+@media (min-width: 1200px) {  
+    
+}
+
+@media (min-width: 1800px) {  
+    
+}
+
+@media (min-width: 2200px) {  
+    
+}
+
+@media (min-width: 2800px) {  
+    
+}
