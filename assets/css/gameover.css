@@ -105,7 +105,8 @@ input {
         font-size: 4rem;
         width: 23rem;
         height: 11rem;
-        padding: 2rem 2rem
+        padding: 2rem 2rem;
+        margin: 0 2rem;
     }
 }
 
@@ -115,6 +116,6 @@ input {
         width: 35rem;
         height: 19rem;
         padding: 6rem 6rem;
-        margin-top: 6rem;
+        margin-top: 6 2rem 0 2rem;
     }
 }
