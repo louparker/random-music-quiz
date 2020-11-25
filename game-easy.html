@@ -12,7 +12,7 @@
     <body>
         <div class="container-fluid text-center d-flex">
             <div id="loader"></div>
-            <div id="game-easy">
+            <div id="game-easy" class="hidden">
                 <!-- heads up display (HUD) -->
                 <div class="row">
                     <div class="col-12">
@@ -21,11 +21,11 @@
                                 <a href="index.html" class="exit__btn">X</a>
                             </div>
                             <div class="hud__btn d-flex" id="hud__item">
-                                <p class="timer" id="timer">29</p>
+                                <p class="timer" id="timer">30</p>
                                 <span class="timer__label">TIME</span>
                             </div>
                             <div class="hud__btn d-flex" id="hud__item">
-                                <p class="scoreboard" id="score">17</p>
+                                <p class="scoreboard" id="score">0</p>
                                 <span class="score__label">SCORE</span>
                             </div>
                         </div>
@@ -46,22 +46,22 @@
                     <div class="col-12">
                         <div class="answer-choices__container d-flex">
                             <div class="choice__container d-flex">
-                                <p class="choice__text" data-number="1">
+                                <p class="choice__text" id="answer" data-number="1">
                                     dummy text
                                 </p>
                             </div>
                             <div class="choice__container d-flex">
-                                <p class="choice__text" data-number="2">
+                                <p class="choice__text" id="answer" data-number="2">
                                     dummy text
                                 </p>
                             </div>
                             <div class="choice__container d-flex">
-                                <p class="choice__text" data-number="3">
+                                <p class="choice__text" id="answer" data-number="3">
                                     dummy text
                                 </p>
                             </div>
                             <div class="choice__container d-flex">
-                                <p class="choice__text" data-number="4">
+                                <p class="choice__text" id="answer" data-number="4">
                                     dummy text
                                 </p>
                             </div>

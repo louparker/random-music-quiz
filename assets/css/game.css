@@ -103,6 +103,14 @@
     align-items: center;
 }
 
+.correct {
+    background-color: #27fb6b;
+}
+
+.incorrect {
+    background-color: #ff0000;
+}
+
 /* media queries */
 
 @media (min-width: 576px) {
