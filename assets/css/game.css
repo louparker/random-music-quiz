@@ -75,7 +75,10 @@
     border-radius: 1.5rem;
     text-align: center;
     margin: 0 auto 1rem auto;
-    
+}
+
+.choice__text:hover {
+    cursor: pointer;
 }
 
 .choice__container:nth-child(1) {
