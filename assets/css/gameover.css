@@ -52,7 +52,7 @@ input {
 #saveScoreBtn {
     color: #e5e5e5;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .option__btns:nth-child(1) {
