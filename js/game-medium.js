@@ -2,7 +2,7 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice__text"));
 const scoreText = document.getElementById('score');
 const loader = document.getElementById('loader');
-const game = document.getElementById('game-easy');
+const game = document.getElementById('game-medium');
 const theTimer = document.getElementById("timer");
 const choiceText = document.getElementById("answer");
 
@@ -45,7 +45,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = {};
 
-fetch('https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple')
+fetch('https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=multiple')
 
     .then(res => {
         return res.json();
@@ -94,7 +94,7 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
-        return window.location.assign('/gameover.html');
+        return window.location.assign('/gameover-medium.html');
     }
 
     questionCounter ++;
