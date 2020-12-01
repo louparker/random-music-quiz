@@ -1,8 +1,6 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice__text"));
 const scoreText = document.getElementById('score');
-const loader = document.getElementById('loader');
-const game = document.getElementById('game-medium');
 const theTimer = document.getElementById("timer");
 const choiceText = document.getElementById("answer");
 
@@ -85,8 +83,6 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
-    game.classList.remove("hidden");
-    loader.classList.add("hidden");
 };
 
 
