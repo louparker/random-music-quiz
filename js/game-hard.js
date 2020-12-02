@@ -7,34 +7,29 @@ const choiceText = document.getElementById("answer");
 /* STARTING GAME */
 
 // timer
-/* function restartInterval(){
+function restartInterval(){
     let seconds = document.getElementById("timer").textContent;
-    clearInterval(timer);
     let countdown = setInterval(function() {
         seconds--;
-        /* choiceText.addEventListener('click', function() {
-            timer.innerText = "15";
-            console.log("la")
-        }); 
+
+      choices.forEach((choice) => {
+        choice.addEventListener('click', (e) => {
+            clearInterval(countdown);
+            timer.innerText = "30";
+            restartInterval();
+        })
+    })
         document.getElementById("timer").textContent = seconds;
         if (seconds <= 0) {
             clearInterval(countdown);
             getNewQuestion();
-            timer.innerText = "15";
-            //alert("TIME'S UP!");
+            timer.innerText = "30";
             restartInterval();
         }
-        choices.forEach((choice) => {
-            choice.addEventListener('click', (e) => {
-                alert("this might be right");
-                console.log("la");
-            })
-        })
     }, 1000);
-} */
+}
 
-
-
+restartInterval()
 //game mechanics
 
 let currentQuestion = {};
@@ -133,23 +128,7 @@ choices.forEach((choice) => {
     });
 });
 
-/* choices.forEach((choice) => {
-    choice.addEventListener('click', (e) => {
-        timer.innerText = "15";
-    })
-}) */
-
 incrementScore = (num) => {
     score += num;
     scoreText.innerHTML = score;
 };
-
-//restartInterval();
-
-/* let countdown = setInterval(function() {
-    seconds--;
-    document.getElementById("timer").textContent = seconds;
-    if (seconds <= 0) clearInterval(countdown);
-    if (seconds <= 0) getNewQuestion();
-    if (seconds <= 0) setInterval();
-}, 1000); */
