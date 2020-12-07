@@ -29,7 +29,7 @@ function restartInterval(){
     }, 1000);
 }
 
-restartInterval()
+restartInterval();
 
 //game mechanics
 
