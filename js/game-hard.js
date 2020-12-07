@@ -2,7 +2,6 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice__text"));
 const scoreText = document.getElementById('score');
 const theTimer = document.getElementById("timer");
-const choiceText = document.getElementById("answer");
 
 /* STARTING GAME */
 
