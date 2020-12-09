@@ -1,16 +1,12 @@
-/* Variables */
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice__text"));
-const scoreText = document.getElementById("score");
+const scoreText = document.getElementById('score');
 const timer = document.getElementById("timer");
 
-let currentQuestion = {};
-let takingAnswers = true;
-let score = 0;
-let questionCounter = 0;
-let availableQuestions = {};
-
 /* STARTING GAME */
+
+const gameDifficulty = window.location.search.replace("?mode=", "");
+
 // timer
 function restartInterval(){
     let seconds = document.getElementById("timer").textContent;
@@ -34,14 +30,20 @@ function restartInterval(){
     }, 1000);
 }
 
-restartInterval();
+console.log(gameDifficulty);
+
+
 
 //game mechanics
 
-let questions = null;
+let currentQuestion = {};
+let takingAnswers = true;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = {};
+let fetchingData = true;
 
-fetch('https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple')
-
+fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDifficulty}&type=multiple`)
     .then(res => {
         return res.json();
     })
@@ -66,13 +68,16 @@ fetch('https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=mu
             return formattedQuestion;
         });
 
-        startGame();
+        fetchingData = false;
+        setTimeout( () => {
+            startGame();
+            restartInterval();
+        }, 4000);
     })
     .catch((err) => {
         console.error(err);
     });
 
-let startGame = null;
 let correctPoints = 10;
 const maxQuestions = 10;
 
@@ -83,15 +88,15 @@ startGame = () => {
     getNewQuestion();
 };
 
-let getNewQuestion = null;
+
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
-        return window.location.assign('/gameover-easy.html');
+        return window.location.assign('/gameover-medium.html');
     }
 
-    questionCounter++;
+    questionCounter ++;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -107,14 +112,6 @@ getNewQuestion = () => {
 
 };
 
-let acceptingAnswers = false;
-let incrementScore = null;
-
-incrementScore = (num) => {
-    score += num;
-    scoreText.innerHTML = score;
-};
-
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
         if (!takingAnswers) return;
@@ -127,7 +124,6 @@ choices.forEach((choice) => {
             selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
         if (classToApply === "correct") {
             incrementScore(correctPoints);
-            
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
@@ -135,7 +131,11 @@ choices.forEach((choice) => {
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-            
         }, 1000);
     });
 });
+
+incrementScore = (num) => {
+    score += num;
+    scoreText.innerHTML = score;
+};

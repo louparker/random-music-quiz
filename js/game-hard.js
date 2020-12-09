@@ -1,7 +1,7 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice__text"));
 const scoreText = document.getElementById('score');
-const theTimer = document.getElementById("timer");
+const timer = document.getElementById("timer");
 
 /* STARTING GAME */
 
@@ -16,8 +16,8 @@ function restartInterval(){
             clearInterval(countdown);
             timer.innerText = "30";
             restartInterval();
-        })
-    })
+        });
+    });
         document.getElementById("timer").textContent = seconds;
         if (seconds <= 0) {
             clearInterval(countdown);
@@ -28,7 +28,7 @@ function restartInterval(){
     }, 1000);
 }
 
-restartInterval()
+restartInterval();
 //game mechanics
 
 let currentQuestion = {};
