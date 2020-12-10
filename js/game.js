@@ -8,6 +8,9 @@ const timer = document.getElementById("timer");
 const gameDifficulty = window.location.search.replace("?mode=", "");
 
 // timer
+
+
+
 function restartInterval(){
     let seconds = document.getElementById("timer").textContent;
     let countdown = setInterval(function() {
@@ -29,10 +32,6 @@ function restartInterval(){
         }
     }, 1000);
 }
-
-console.log(gameDifficulty);
-
-
 
 //game mechanics
 
@@ -78,7 +77,17 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
         console.error(err);
     });
 
-let correctPoints = 10;
+const levelScore = gameDifficulty === "easy" ? 10
+                : gameDifficulty === "medium" ? 20
+                : 30;
+/* timedScore = () => {
+    if (timer.innerText <= 27) {
+        console.log("less tthan 27");
+    };
+}; */
+
+//console.log(counter);
+
 const maxQuestions = 10;
 
 startGame = () => {
@@ -123,7 +132,7 @@ choices.forEach((choice) => {
         const classToApply = 
             selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
         if (classToApply === "correct") {
-            incrementScore(correctPoints);
+            incrementScore(levelScore);
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
