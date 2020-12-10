@@ -37,6 +37,10 @@ Purple:     #541388 accent color
     align-items: center;
 }
 
+.hidden {
+    display: none;
+  }
+
 /* Bounce In Effect*/
 .hvr-bounce-in {
     display: inline-block;

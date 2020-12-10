@@ -2,6 +2,8 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice__text"));
 const scoreText = document.getElementById('score');
 const timer = document.getElementById("timer");
+const game = document.getElementById("game");
+const loader = document.getElementById("loader");
 
 /* STARTING GAME */
 
@@ -69,6 +71,8 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
 
         fetchingData = false;
         setTimeout( () => {
+            game.classList.remove("hidden");
+            loader.classList.add("hidden");
             startGame();
             restartInterval();
         }, 1000);
