@@ -72,7 +72,7 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
         setTimeout( () => {
             startGame();
             restartInterval();
-        }, 4000);
+        }, 1000);
     })
     .catch((err) => {
         console.error(err);
@@ -93,7 +93,7 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
-        return window.location.assign('/gameover-medium.html');
+        return window.location.assign(`/gameover.html?mode=${gameDifficulty}`);
     }
 
     questionCounter ++;
