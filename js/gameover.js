@@ -6,13 +6,12 @@ const easyHighScores = JSON.parse(localStorage.getItem("easyHighScores")) || [];
 const mediumHighScores = JSON.parse(localStorage.getItem("mediumHighScores")) || [];
 const hardHighScores = JSON.parse(localStorage.getItem("hardHighScores")) || [];
 const maxHighScores = 5;
-
 const gameDifficulty = window.location.search.replace("?mode=", "");
 
-console.log(gameDifficulty);
-
+//setting most recent game score to the final score element
 finalScore.innerText = mostRecentScore;
 
+//disabling the save button until user has entered a value in input element
 playerName.addEventListener("keyup", () =>{
     saveScoreBtn.disabled = !playerName.value;
 })
@@ -20,11 +19,13 @@ playerName.addEventListener("keyup", () =>{
 saveHighScore = e => {
     e.preventDefault();
 
+//setting up score data for highscores page
     const score = {
         score: mostRecentScore,
         name: playerName.value
     };
 
+//sending the correct high scores to the correct difficulty level on the high scores page
     if (gameDifficulty === "easy") {
         easyHighScores.push(score);
         easyHighScores.sort( (a,b) => b.score - a.score);

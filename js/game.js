@@ -11,11 +11,13 @@ const gameDifficulty = window.location.search.replace("?mode=", "");
 
 // timer
 
+//function to start the timer on end of current time or start of new question
 function restartInterval(){
     let seconds = document.getElementById("timer").textContent;
     let countdown = setInterval(function() {
         seconds--;
 
+//new question timer restart function
       choices.forEach((choice) => {
         choice.addEventListener('click', (e) => {
             clearInterval(countdown);
@@ -23,6 +25,7 @@ function restartInterval(){
             restartInterval();
         });
     });
+//timer reaches zero restart function
         document.getElementById("timer").textContent = seconds;
         if (seconds <= 0) {
             clearInterval(countdown);
@@ -43,16 +46,19 @@ let questionCounter = 0;
 let availableQuestions = {};
 let fetchingData = true;
 
+//taking data from API
 fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDifficulty}&type=multiple`)
     .then(res => {
         return res.json();
     })
+//taking question data from API and formatting it to be used
     .then((loadedQuestions) => {
          questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
                 question: loadedQuestion.question,
             };
 
+//taking answer data and choosing random place for corrent and incorrent answers
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
@@ -68,6 +74,7 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
             return formattedQuestion;
         });
 
+//confirming game data is all loaded, showing the game page and removing the loading screen
         fetchingData = false;
         setTimeout( () => {
             game.classList.remove("hidden");
@@ -80,21 +87,14 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
         console.error(err);
     });
 
+//giving specific scores based on gae difficulty
 const levelScore = gameDifficulty === "easy" ? 10
                 : gameDifficulty === "medium" ? 20
                 : 30;
-/* timedScore = () => {
-    if (timer.innerText <= 27) {
-        console.log("less tthan 27");
-    };
-}; */
-
-//console.log(counter);
-
-
 
 const maxQuestions = 10;
 
+//base set up for loading the game page
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -103,7 +103,7 @@ startGame = () => {
 };
 
 
-
+//grabbing new question data and assigning score for gameover page
 const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
@@ -125,7 +125,7 @@ const getNewQuestion = () => {
     takingAnswers = true;
 
 };
-
+//checking if answers are correct or not
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
         if (!takingAnswers) return;
@@ -149,6 +149,7 @@ choices.forEach((choice) => {
     });
 });
 
+//adds specified score to score element
 incrementScore = (num) => {
     score += num;
     scoreText.innerHTML = score;

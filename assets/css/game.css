@@ -320,16 +320,16 @@
         font-size: 4rem;
         height: 50px;
     }
-    
+
     .timer__label {
         font-size: 2rem;
     }
-    
+
     .scoreboard {
         font-size: 4rem;
         height: 50px;
     }
-    
+
     .score__label {
         font-size: 2rem;
     }
@@ -353,7 +353,7 @@
     .container-fluid {
         height: 100%;
     }
-    
+
     .hud__btn {
         width: 14rem;
         height: 14rem;
@@ -367,16 +367,16 @@
         font-size: 8rem;
         height: 90px;
     }
-    
+
     .timer__label {
         font-size: 4rem;
     }
-    
+
     .scoreboard {
         font-size: 8rem;
         height: 90px;
     }
-    
+
     .score__label {
         font-size: 4rem;
     }
