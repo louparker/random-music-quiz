@@ -104,7 +104,7 @@ startGame = () => {
 
 
 //grabbing new question data and assigning score for gameover page
-const getNewQuestion = () => {
+getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
         return window.location.assign(`/gameover.html?mode=${gameDifficulty}`);
