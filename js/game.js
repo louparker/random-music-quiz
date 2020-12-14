@@ -11,8 +11,6 @@ const gameDifficulty = window.location.search.replace("?mode=", "");
 
 // timer
 
-
-
 function restartInterval(){
     let seconds = document.getElementById("timer").textContent;
     let countdown = setInterval(function() {
@@ -35,6 +33,7 @@ function restartInterval(){
     }, 1000);
 }
 
+
 //game mechanics
 
 let currentQuestion = {};
@@ -49,7 +48,7 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
         return res.json();
     })
     .then((loadedQuestions) => {
-        questions = loadedQuestions.results.map((loadedQuestion) => {
+         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
                 question: loadedQuestion.question,
             };
@@ -92,6 +91,8 @@ const levelScore = gameDifficulty === "easy" ? 10
 
 //console.log(counter);
 
+
+
 const maxQuestions = 10;
 
 startGame = () => {
@@ -103,7 +104,7 @@ startGame = () => {
 
 
 
-getNewQuestion = () => {
+const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
         return window.location.assign(`/gameover.html?mode=${gameDifficulty}`);
@@ -116,7 +117,7 @@ getNewQuestion = () => {
     question.innerHTML = currentQuestion.question;
 
     choices.forEach((choice) => {
-        const number = choice.dataset['number'];
+        const number = choice.dataset.number;
         choice.innerHTML = currentQuestion['choice' + number];
     });
 
@@ -131,9 +132,9 @@ choices.forEach((choice) => {
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        const selectedAnswer = selectedChoice.dataset.number;
 
-        const classToApply = 
+        const classToApply =
             selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
         if (classToApply === "correct") {
             incrementScore(levelScore);

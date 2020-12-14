@@ -41,6 +41,7 @@ Purple:     #541388 accent color
     display: none;
   }
 
+/* Animations */
 /* Bounce In Effect*/
 .hvr-bounce-in {
     display: inline-block;
@@ -89,7 +90,6 @@ hr {
     margin-top: 3rem;
     justify-content: center;
     align-items: center;
-    
 }
 
 a:link {
