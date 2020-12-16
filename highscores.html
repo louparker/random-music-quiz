@@ -10,73 +10,75 @@
         <link rel="stylesheet" href="assets/css/highscores.css">
     </head>
     <body>
-        <div class="container-fluid text-center d-flex">
-            <div id="highscores">
-                <!-- title -->
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="highscores__title">HIGH SCORES</h1>
-                    </div>
-                </div>
-
-                <!-- scoreboards -->
-                <div class="scoreboards__container d-flex">
-                    <!-- easy level -->
+        <main>
+            <div class="container-fluid text-center d-flex">
+                <div id="highscores">
+                    <!-- title -->
                     <div class="row">
                         <div class="col-12">
-                            <div class="level__container d-flex">
-                                <!-- tips -->
-                                <h2 class="level__title">EASY</h2>
+                            <h1 class="highscores__title">HIGH SCORES</h1>
+                        </div>
+                    </div>
 
-                                <!-- score box -->
-                                <div class="score-box__container">
-                                    <ul id="easyScoresList"></ul>
+                    <!-- scoreboards -->
+                    <div class="scoreboards__container d-flex">
+                        <!-- easy level -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="level__container d-flex">
+                                    <!-- tips -->
+                                    <h2 class="level__title">EASY</h2>
+
+                                    <!-- score box -->
+                                    <div class="score-box__container">
+                                        <ul id="easyScoresList"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- medium level -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="level__container d-flex">
+                                    <!-- tips -->
+                                    <h2 class="level__title">MEDIUM</h2>
+
+                                    <!-- score box -->
+                                    <div class="score-box__container">
+                                        <ul id="mediumScoresList"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- hard level -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="level__container d-flex">
+                                    <!-- title -->
+                                    <h2 class="level__title">HARD</h2>
+
+                                    <!-- score box -->
+                                    <div class="score-box__container">
+                                        <ul id="hardScoresList"></ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- medium level -->
+                    <!-- home button -->
                     <div class="row">
                         <div class="col-12">
-                            <div class="level__container d-flex">
-                                <!-- tips -->
-                                <h2 class="level__title">MEDIUM</h2>
-
-                                <!-- score box -->
-                                <div class="score-box__container">
-                                    <ul id="mediumScoresList"></ul>
-                                </div>
+                            <div class="go-home-btn__container d-flex hvr-bounce-in">
+                                <a href="index.html" class="go-home__btn">GO HOME</a>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- hard level -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="level__container d-flex">
-                                <!-- title -->
-                                <h2 class="level__title">HARD</h2>
-
-                                <!-- score box -->
-                                <div class="score-box__container">
-                                    <ul id="hardScoresList"></ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- home button -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="go-home-btn__container d-flex hvr-bounce-in">
-                            <a href="index.html" class="go-home__btn">GO HOME</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
 
         <!-- scripts -->    
         <script src="js/highscores.js"></script>

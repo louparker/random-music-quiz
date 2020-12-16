@@ -10,65 +10,67 @@
         <link rel="stylesheet" href="assets/css/game.css">
     </head>
     <body>
-        <div class="container-fluid text-center d-flex">
-            <div id="loader" class="spinner">
-                <div class="dot1"></div>
-                <div class="dot2"></div>
-              </div>
-            <div id="game" class="hidden">
-                <!-- heads up display (HUD) -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="hud__container d-flex">
-                            <div class="hud__btn d-flex hvr-pulse-shrink">
-                                <a href="index.html" class="exit__btn">X</a>
-                            </div>
-                            <div class="hud__btn d-flex">
-                                <p class="timer" id="timer">30</p>
-                                <span class="timer__label">TIME</span>
-                            </div>
-                            <div class="hud__btn d-flex">
-                                <p class="scoreboard" id="score">0</p>
-                                <span class="score__label">SCORE</span>
+        <main>
+            <div class="container-fluid text-center d-flex">
+                <div id="loader" class="spinner">
+                    <div class="dot1"></div>
+                    <div class="dot2"></div>
+                </div>
+                <div id="game" class="hidden">
+                    <!-- heads up display (HUD) -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hud__container d-flex">
+                                <div class="hud__btn d-flex hvr-pulse-shrink">
+                                    <a href="index.html" class="exit__btn">X</a>
+                                </div>
+                                <div class="hud__btn d-flex">
+                                    <p class="timer" id="timer">30</p>
+                                    <span class="timer__label">TIME</span>
+                                </div>
+                                <div class="hud__btn d-flex">
+                                    <p class="scoreboard" id="score">0</p>
+                                    <span class="score__label">SCORE</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- game question -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="game__question d-flex">
-                            <p class="question-text" id="question"></p>
+                    <!-- game question -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="game__question d-flex">
+                                <p class="question-text" id="question"></p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- answer choices -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="answer-choices__container d-flex">
-                            <div class="choice__container d-flex">
-                                <p class="choice__text" data-number="1">
-                                </p>
-                            </div>
-                            <div class="choice__container d-flex">
-                                <p class="choice__text" data-number="2">
-                                </p>
-                            </div>
-                            <div class="choice__container d-flex">
-                                <p class="choice__text" data-number="3">
-                                </p>
-                            </div>
-                            <div class="choice__container d-flex">
-                                <p class="choice__text" data-number="4">
-                                </p>
+                    <!-- answer choices -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="answer-choices__container d-flex">
+                                <div class="choice__container d-flex">
+                                    <p class="choice__text" data-number="1">
+                                    </p>
+                                </div>
+                                <div class="choice__container d-flex">
+                                    <p class="choice__text" data-number="2">
+                                    </p>
+                                </div>
+                                <div class="choice__container d-flex">
+                                    <p class="choice__text" data-number="3">
+                                    </p>
+                                </div>
+                                <div class="choice__container d-flex">
+                                    <p class="choice__text" data-number="4">
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
 
         <!-- scripts --> 
         <script src="js/game.js"></script>

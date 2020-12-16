@@ -10,54 +10,56 @@
         <link rel="stylesheet" href="assets/css/gameover.css">
     </head>
     <body>
-        <div class="container-fluid text-center d-flex">
-            <div id="gameover">
-                <!-- title -->
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="score__title">FINAL SCORE</h1>
+        <main>
+            <div class="container-fluid text-center d-flex">
+                <div id="gameover">
+                    <!-- title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="score__title">FINAL SCORE</h1>
+                        </div>
                     </div>
-                </div>
 
-                <!-- score box -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="score-box d-flex">
-                            <div class="score__container d-flex">
-                                <p class="score__text" id="finalScore">
-                                    18
-                                </p>
+                    <!-- score box -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="score-box d-flex">
+                                <div class="score__container d-flex">
+                                    <p class="score__text" id="finalScore">
+                                        18
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- user input -->
+                    <div class="row">
+                        <div class="col-12">
+                            <form id="name-form">
+                                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- option buttons -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="option__btns d-flex">
+                                <!-- this link below needs to go back to whatever game level the player was just playing -->
+                                <a href="game.html?mode=easy" class="option__btn hvr-bounce-in">PLAY AGAIN</a>
+                
+                                <!-- form btn -->
+                                <button type="submit" form="name-form" id="saveScoreBtn" class="option__btn hvr-bounce-in" onclick="saveHighScore(event)" disabled>SAVE</button>
+                
+                                <!-- option buttons -->
+                                <a href="index.html" class="option__btn hvr-bounce-in">GO HOME</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- user input -->
-                <div class="row">
-                    <div class="col-12">
-                        <form id="name-form">
-                            <input type="text" name="name" id="name" placeholder="Enter Your Name">
-                        </form>
-                    </div>
-                </div>
-
-                <!-- option buttons -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="option__btns d-flex">
-                            <!-- this link below needs to go back to whatever game level the player was just playing -->
-                            <a href="game.html?mode=easy" class="option__btn hvr-bounce-in">PLAY AGAIN</a>
-            
-                            <!-- form btn -->
-                            <button type="submit" form="name-form" id="saveScoreBtn" class="option__btn hvr-bounce-in" onclick="saveHighScore(event)" disabled>SAVE</button>
-            
-                            <!-- option buttons -->
-                            <a href="index.html" class="option__btn hvr-bounce-in">GO HOME</a>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
+        </main>
 
         <!-- scripts --> 
         <script src="js/gameover.js"></script>

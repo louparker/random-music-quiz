@@ -157,7 +157,7 @@
     width: 24rem;
     height: 7rem;
     background-color: #cc3f0c;
-    color: #e5e5e5;
+    color: #ffffff;
     border-radius: 1.5rem;
     text-align: center;
     margin: 0 auto 1rem auto;
@@ -168,7 +168,7 @@
 }
 
 .choice__container:nth-child(1) {
-    background-color: #029c8b;
+    background-color: #004b42;
     justify-content: center;
     align-items: center;
 }
