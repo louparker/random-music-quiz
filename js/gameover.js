@@ -7,6 +7,8 @@ const mediumHighScores = JSON.parse(localStorage.getItem("mediumHighScores")) ||
 const hardHighScores = JSON.parse(localStorage.getItem("hardHighScores")) || [];
 const maxHighScores = 5;
 const gameDifficulty = window.location.search.replace("?mode=", "");
+console.log(window.location)
+
 
 //setting most recent game score to the final score element
 finalScore.innerText = mostRecentScore;
@@ -24,7 +26,7 @@ saveHighScore = e => {
         score: mostRecentScore,
         name: playerName.value
     };
-
+    
 //sending the correct high scores to the correct difficulty level on the high scores page
     if (gameDifficulty === "easy") {
         easyHighScores.push(score);
@@ -45,5 +47,5 @@ saveHighScore = e => {
         localStorage.setItem("hardHighScores", JSON.stringify(hardHighScores));
         window.location.assign("/");
     }
-    
 }
+
