@@ -4,7 +4,7 @@
 
 Green:      #33673b text color
 Dark Green: #19231a secondary background/text color
-Teal:       #029c8b accent color
+Teal:       #004b42 accent color
 Brown:      #320c0f accent color
 Orange:     #cc3f0c accent color
 Grey:       #e5e5e5 background color
@@ -105,7 +105,7 @@ a:visited {
     font-size: 4rem;
     width: 18rem;
     height: 6rem;
-    background-color: #029c8b;
+    background-color: #004b42;
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
