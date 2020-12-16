@@ -45,7 +45,6 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = {};
 let fetchingData = true;
-const repoName = "/random-music-quiz";
 
 //taking data from API
 fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDifficulty}&type=multiple`)
@@ -108,7 +107,7 @@ startGame = () => {
 const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
-        return window.location.assign(`${repoName}/gameover.html?mode=${gameDifficulty}`);
+        return window.location.assign(`/gameover.html?mode=${gameDifficulty}`);
     }
 
     questionCounter ++;
