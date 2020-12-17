@@ -154,3 +154,5 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerHTML = score;
 };
+
+console.log(gameDifficulty);

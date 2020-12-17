@@ -1,5 +1,6 @@
 const playerName = document.getElementById("name");
 const saveScoreBtn = document.getElementById("saveScoreBtn");
+const backToGameBtn = document.getElementById("backToGameBtn");
 const finalScore = document.getElementById("finalScore");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 const easyHighScores = JSON.parse(localStorage.getItem("easyHighScores")) || [];
@@ -14,6 +15,10 @@ finalScore.innerText = mostRecentScore;
 playerName.addEventListener("keyup", () =>{
     saveScoreBtn.disabled = !playerName.value;
 })
+
+backToGame = e => {
+    return window.location.assign(`/game.html?mode=${gameDifficulty}`);
+};
 
 saveHighScore = e => {
     e.preventDefault();

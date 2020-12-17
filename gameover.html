@@ -50,7 +50,7 @@
                         <div class="col-12">
                             <div class="option__btns d-flex">
                                 <!-- this link below needs to go back to whatever game level the player was just playing -->
-                                <a href="game.html?mode=easy" class="option__btn hvr-bounce-in">PLAY AGAIN</a>
+                                <button class="option__btn hvr-bounce-in" id="backToGameBtn" onclick="backToGame(event)">PLAY AGAIN</button>
 
                                 <!-- form btn -->
                                 <button type="submit" form="name-form" id="saveScoreBtn" class="option__btn hvr-bounce-in" onclick="saveHighScore(event)" disabled>SAVE</button>
