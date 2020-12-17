@@ -8,7 +8,6 @@ const loader = document.getElementById("loader");
 /* STARTING GAME */
 
 const gameDifficulty = window.location.search.replace("?mode=", "");
-
 // timer
 
 //function to start the timer on end of current time or start of new question
@@ -107,7 +106,7 @@ startGame = () => {
 const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
-        return window.location.assign(`/gameover.html?mode=${gameDifficulty}`);
+        return window.location.replace(`/gameover.html?mode=${gameDifficulty}`);
     }
 
     questionCounter ++;
@@ -148,7 +147,6 @@ choices.forEach((choice) => {
         }, 1000);
     });
 });
-
 //adds specified score to score element
 incrementScore = (num) => {
     score += num;
@@ -156,3 +154,4 @@ incrementScore = (num) => {
 };
 
 console.log(gameDifficulty);
+console.log(window.location.pathname)
