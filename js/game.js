@@ -106,7 +106,7 @@ startGame = () => {
 const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
-        return window.location.replace(`/gameover.html?mode=${gameDifficulty}`);
+        return window.location.assign(`/gameover.html?mode=${gameDifficulty}`);
     }
 
     questionCounter ++;
