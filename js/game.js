@@ -93,7 +93,6 @@ const levelScore = gameDifficulty === "easy" ? 10
                 : 30;
 
 const maxQuestions = 10;
-const gameoverPath = "/random-music-quiz/gameover.html?mode=";
 let baseUrl ="https://louparker.github.io/random-music-quiz";
 
 //base set up for loading the game page
@@ -155,7 +154,3 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerHTML = score;
 };
-
-console.log(gameDifficulty);
-console.log(window.location);
-console.log(baseUrl);

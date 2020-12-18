@@ -43,6 +43,10 @@ input {
 }
 
 /* option buttons */
+button {
+    color: #ffffff;
+}
+
 .option__btns {
     flex-direction: column;
     margin-top: 2rem;
