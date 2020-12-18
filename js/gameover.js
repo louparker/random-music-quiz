@@ -8,6 +8,8 @@ const mediumHighScores = JSON.parse(localStorage.getItem("mediumHighScores")) ||
 const hardHighScores = JSON.parse(localStorage.getItem("hardHighScores")) || [];
 const gameDifficulty = window.location.search.replace("?mode=", "");
 
+let baseUrl ="https://louparker.github.io/random-music-quiz"
+
 //setting most recent game score to the final score element
 finalScore.innerText = mostRecentScore;
 
@@ -17,7 +19,7 @@ playerName.addEventListener("keyup", () =>{
 })
 
 backToGame = e => {
-    return window.location.assign(`/game.html?mode=${gameDifficulty}`);
+    return window.location.replace(`${baseUrl}/game.html?mode=${gameDifficulty}`);
 };
 
 saveHighScore = e => {
