@@ -5,6 +5,7 @@ const timer = document.getElementById("timer");
 const game = document.getElementById("game");
 const loader = document.getElementById("loader");
 
+
 /* STARTING GAME */
 
 const gameDifficulty = window.location.search.replace("?mode=", "");
@@ -92,6 +93,8 @@ const levelScore = gameDifficulty === "easy" ? 10
                 : 30;
 
 const maxQuestions = 10;
+const gameoverPath = "/random-music-quiz/gameover.html?mode="
+let baseUrl ="https://louparker.github.io/random-music-quiz"
 
 //base set up for loading the game page
 startGame = () => {
@@ -106,7 +109,7 @@ startGame = () => {
 const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
-        return window.location.assign(`/gameover.html?mode=${gameDifficulty}`);
+        return window.location.replace(`${baseUrl}/gameover.html?mode=${gameDifficulty}`);
     }
 
     questionCounter ++;
@@ -154,4 +157,5 @@ incrementScore = (num) => {
 };
 
 console.log(gameDifficulty);
-console.log(window.location.pathname)
+console.log(window.location);
+console.log(baseUrl);
