@@ -51,5 +51,7 @@ saveHighScore = e => {
         localStorage.setItem("hardHighScores", JSON.stringify(hardHighScores));
         window.location.assign("/");
     }
+
+    return window.location.replace(`${baseUrl}/index.html`);
 }
 

@@ -84,7 +84,7 @@ function restartInterval(){
     .catch((err) => {
         console.error(err);
     });
-              
+
 //base set up for loading the game page
 const startGame = () => {
     questionCounter = 0;
@@ -100,7 +100,7 @@ const levelScore = gameDifficulty === "easy" ? 10
 
 const maxQuestions = 10;
 let baseUrl ="https://louparker.github.io/random-music-quiz";
-              
+
 //checking if answers are correct or not
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
