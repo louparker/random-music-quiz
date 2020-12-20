@@ -47,6 +47,10 @@ button {
     color: #ffffff;
 }
 
+button:visited {
+    color: #ffffff;
+}
+
 .option__btns {
     flex-direction: column;
     margin-top: 2rem;

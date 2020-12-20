@@ -4,39 +4,9 @@ const scoreText = document.getElementById('score');
 const timer = document.getElementById("timer");
 const game = document.getElementById("game");
 const loader = document.getElementById("loader");
-
+const gameDifficulty = window.location.search.replace("?mode=", "");
 
 /* STARTING GAME */
-
-const gameDifficulty = window.location.search.replace("?mode=", "");
-// timer
-
-//function to start the timer on end of current time or start of new question
-function restartInterval(){
-    let seconds = document.getElementById("timer").textContent;
-    let countdown = setInterval(function() {
-        seconds--;
-
-//new question timer restart function
-      choices.forEach((choice) => {
-        choice.addEventListener('click', (e) => {
-            clearInterval(countdown);
-            timer.innerText = "30";
-            restartInterval();
-        });
-    });
-//timer reaches zero restart function
-        document.getElementById("timer").textContent = seconds;
-        if (seconds <= 0) {
-            clearInterval(countdown);
-            getNewQuestion();
-            timer.innerText = "30";
-            restartInterval();
-        }
-    }, 1000);
-}
-
-
 //game mechanics
 
 let currentQuestion = {};
@@ -45,6 +15,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = {};
 let fetchingData = true;
+let acceptingAnswers = true;
 
 //taking data from API
 fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDifficulty}&type=multiple`)
@@ -74,6 +45,33 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
             return formattedQuestion;
         });
 
+// timer
+
+//function to start the timer on end of current time or start of new question
+function restartInterval(){
+    let seconds = document.getElementById("timer").textContent;
+    let countdown = setInterval(function() {
+        seconds--;
+
+//new question timer restart function
+      choices.forEach((choice) => {
+        choice.addEventListener('click', (e) => {
+            clearInterval(countdown);
+            timer.innerText = "30";
+            restartInterval();
+        });
+    });
+//timer reaches zero restart function
+        document.getElementById("timer").textContent = seconds;
+        if (seconds <= 0) {
+            clearInterval(countdown);
+            getNewQuestion();
+            timer.innerText = "30";
+            restartInterval();
+        }
+    }, 1000);
+}
+
 //confirming game data is all loaded, showing the game page and removing the loading screen
         fetchingData = false;
         setTimeout( () => {
@@ -86,6 +84,14 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
     .catch((err) => {
         console.error(err);
     });
+              
+//base set up for loading the game page
+const startGame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
+};
 
 //giving specific scores based on gae difficulty
 const levelScore = gameDifficulty === "easy" ? 10
@@ -94,38 +100,7 @@ const levelScore = gameDifficulty === "easy" ? 10
 
 const maxQuestions = 10;
 let baseUrl ="https://louparker.github.io/random-music-quiz";
-
-//base set up for loading the game page
-startGame = () => {
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = [...questions];
-    getNewQuestion();
-};
-
-
-//grabbing new question data and assigning score for gameover page
-const getNewQuestion = () => {
-    if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-        localStorage.setItem("mostRecentScore", score);
-        return window.location.replace(`${baseUrl}/gameover.html?mode=${gameDifficulty}`);
-    }
-
-    questionCounter ++;
-
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionIndex];
-    question.innerHTML = currentQuestion.question;
-
-    choices.forEach((choice) => {
-        const number = choice.dataset.number;
-        choice.innerHTML = currentQuestion['choice' + number];
-    });
-
-    availableQuestions.splice(questionIndex, 1);
-    takingAnswers = true;
-
-};
+              
 //checking if answers are correct or not
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
@@ -150,7 +125,31 @@ choices.forEach((choice) => {
     });
 });
 //adds specified score to score element
-incrementScore = (num) => {
+const incrementScore = (num) => {
     score += num;
     scoreText.innerHTML = score;
+};
+
+
+//grabbing new question data and assigning score for gameover page
+const getNewQuestion = () => {
+    if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+        localStorage.setItem("mostRecentScore", score);
+        return window.location.replace(`${baseUrl}/gameover.html?mode=${gameDifficulty}`);
+    }
+
+    questionCounter ++;
+    
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerHTML = currentQuestion.question;
+
+    choices.forEach((choice) => {
+        const number = choice.dataset.number;
+        choice.innerHTML = currentQuestion['choice' + number];
+    });
+
+    availableQuestions.splice(questionIndex, 1);
+    takingAnswers = true;
+
 };
