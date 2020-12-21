@@ -16,6 +16,7 @@ let questionCounter = 0;
 let availableQuestions = {};
 let fetchingData = true;
 let acceptingAnswers = true;
+let questions = [];
 
 
 //taking data from API
