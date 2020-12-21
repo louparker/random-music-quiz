@@ -54,7 +54,7 @@ if (gameDifficulty === "easy") {
     timer.innerText = "80";
 } else {
     timer.innerText = "70";
-};
+}
 
 //function to start the timer on end of current time or start of new question
 function restartInterval(){

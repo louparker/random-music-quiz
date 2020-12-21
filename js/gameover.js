@@ -1,6 +1,5 @@
 const playerName = document.getElementById("name");
 const saveScoreBtn = document.getElementById("saveScoreBtn");
-const backToGameBtn = document.getElementById("backToGameBtn");
 const finalScore = document.getElementById("finalScore");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 const easyHighScores = JSON.parse(localStorage.getItem("easyHighScores")) || [];
@@ -8,7 +7,7 @@ const mediumHighScores = JSON.parse(localStorage.getItem("mediumHighScores")) ||
 const hardHighScores = JSON.parse(localStorage.getItem("hardHighScores")) || [];
 const gameDifficulty = window.location.search.replace("?mode=", "");
 
-let baseUrl ="https://louparker.github.io/random-music-quiz"
+let baseUrl ="https://louparker.github.io/random-music-quiz";
 
 //setting most recent game score to the final score element
 finalScore.innerText = mostRecentScore;
@@ -16,7 +15,7 @@ finalScore.innerText = mostRecentScore;
 //disabling the save button until user has entered a value in input element
 playerName.addEventListener("keyup", () =>{
     saveScoreBtn.disabled = !playerName.value;
-})
+});
 
 //forcing the play again button to go back to correct difficulty game page
 backToGame = e => {
@@ -54,5 +53,5 @@ saveHighScore = e => {
     }
 
     return window.location.replace(`${baseUrl}/index.html`);
-}
+};
 
