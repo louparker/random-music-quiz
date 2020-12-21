@@ -164,7 +164,8 @@
 }
 
 .choice__text {
-    padding: 4rem;
+    padding: 4rem 7rem;
+    font-size: 2rem;
 }
 
 .choice__text:hover {
