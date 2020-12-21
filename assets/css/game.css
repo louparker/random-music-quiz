@@ -163,6 +163,10 @@
     margin: 0 auto 1rem auto;
 }
 
+.choice__text {
+    padding: 4rem;
+}
+
 .choice__text:hover {
     cursor: pointer;
 }
