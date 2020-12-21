@@ -66,11 +66,13 @@ function restartInterval(){
 //timer reaches zero restart function
         document.getElementById("timer").textContent = seconds;
         if (seconds <= 0) {
-            localStorage.setItem("mostRecentScore", score)
+            clearInterval(countdown);
+            localStorage.setItem("mostRecentScore", score);
             return window.location.replace(`${baseUrl}/gameover.html?mode=${gameDifficulty}`);
         }
     }, 1000);
 }
+
 
 
 //confirming game data is all loaded, showing the game page and removing the loading screen
