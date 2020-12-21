@@ -12,6 +12,20 @@ Purple:     #541388 accent color
 
 */
 
+/* Animations */
+/* Bounce In Effect*/
+.hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    transform: scale(1.2);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
 /* General Page Utilities */
 :root {
     background-color: #e5e5e5;
@@ -39,20 +53,6 @@ Purple:     #541388 accent color
 
 .hidden {
     display: none;
-  }
-
-/* Animations */
-/* Bounce In Effect*/
-.hvr-bounce-in {
-    display: inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    transition-duration: 0.5s;
-  }
-  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
-    transform: scale(1.2);
-    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   }
 
 /* HOME PAGE */

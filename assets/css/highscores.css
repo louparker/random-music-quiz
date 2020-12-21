@@ -1,3 +1,4 @@
+/* ANIMATIONS */
 /* Bounce In Effect*/
 .hvr-bounce-in {
     display: inline-block;
@@ -11,6 +12,7 @@
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   }
 
+/* Titles */
 .highscores__title {
     font-size: 5rem;
 }
@@ -21,6 +23,7 @@
     margin-top: 3rem;
 }
 
+/* Containers */
 .scoreboards__container {
     flex-direction: column;
 }

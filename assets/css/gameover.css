@@ -1,3 +1,4 @@
+/* ANIMATIONS */
 /* Bounce In Effect*/
 .hvr-bounce-in {
     display: inline-block;
@@ -70,14 +71,14 @@ button:visited {
     padding: 1rem 2rem;
 }
 
+.option__btns:nth-child(1) {
+    margin-bottom: 3rem;
+}
+
 #saveScoreBtn {
     color: #e5e5e5;
     border: none;
     /* cursor: pointer; */
-}
-
-.option__btns:nth-child(1) {
-    margin-bottom: 3rem;
 }
 
 /* media queries */
