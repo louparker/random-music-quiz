@@ -21,7 +21,7 @@ playerName.addEventListener("keyup", () =>{
 backToGame = e => {
     return window.location.replace(`${baseUrl}/game.html?mode=${gameDifficulty}`);
 };
-
+//preventing form from submitting to new page
 saveHighScore = e => {
     e.preventDefault();
 
