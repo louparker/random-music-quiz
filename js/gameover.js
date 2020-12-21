@@ -18,6 +18,7 @@ playerName.addEventListener("keyup", () =>{
     saveScoreBtn.disabled = !playerName.value;
 })
 
+//forcing the play again button to go back to correct difficulty game page
 backToGame = e => {
     return window.location.replace(`${baseUrl}/game.html?mode=${gameDifficulty}`);
 };

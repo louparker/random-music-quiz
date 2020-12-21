@@ -134,7 +134,7 @@ const incrementScore = (num) => {
 };
 
 
-//grabbing new question data and assigning score for gameover page
+//grabbing new question data and assigning score & redirecting to gameover page
 const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
