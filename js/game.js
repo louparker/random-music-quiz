@@ -17,6 +17,7 @@ let availableQuestions = {};
 let fetchingData = true;
 let acceptingAnswers = true;
 
+
 //taking data from API
 fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDifficulty}&type=multiple`)
     .then(res => {
@@ -46,6 +47,14 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
         });
 
 // timer
+//Setting correct time for each level
+if (gameDifficulty === "easy") {
+    timer.innerText = "90";
+} else if (gameDifficulty == "medium") {
+    timer.innerText = "80";
+} else {
+    timer.innerText = "70";
+};
 
 //function to start the timer on end of current time or start of new question
 function restartInterval(){
@@ -53,24 +62,16 @@ function restartInterval(){
     let countdown = setInterval(function() {
         seconds--;
 
-//new question timer restart function
-      choices.forEach((choice) => {
-        choice.addEventListener('click', (e) => {
-            clearInterval(countdown);
-            timer.innerText = "30";
-            restartInterval();
-        });
-    });
+
 //timer reaches zero restart function
         document.getElementById("timer").textContent = seconds;
         if (seconds <= 0) {
-            clearInterval(countdown);
-            getNewQuestion();
-            timer.innerText = "30";
-            restartInterval();
+            localStorage.setItem("mostRecentScore", score)
+            return window.location.replace(`${baseUrl}/gameover.html?mode=${gameDifficulty}`);
         }
     }, 1000);
 }
+
 
 //confirming game data is all loaded, showing the game page and removing the loading screen
         fetchingData = false;
