@@ -29,7 +29,7 @@ This is a live link to the site which is hosted on GitHub Pages.
     - XD Mock-Ups
     - Design Wrap-Up
 5. [Features](features)
-6. [Features Left To Implement](features-to-implement)
+6. [Features Left To Implement](features-left-to-implement)
 7. [Technologies Used](technologies-used)
 8. [Testing](testing)
 9. [Deployment](deployment)
@@ -174,31 +174,7 @@ GitHub Pages – Deployment.
 
 ### Testing
 
-Throughout the development of this project, various proactive testing was done. With HTML & CSS links were checked and syntax was dynamically corrected. With JavaScript, functions were console logged to check functionality and if the results were as expected. Once the project was near completion, another more thorough round of testing begun. This included:
-
-#### Code Validation
-
-W3C HTML Validator:
-Markup passed through without any errors
-
-Jigsaw CSS Validator
-Code passed through without any errors
-
-JSHint Javascript Code Quality Tool
-
-#### Automated Testing
-
-LightHouse
-
-Uptrends
-
-#### Responsiveness & Browser Compatibility
-
-#### User Story Testing
-
-#### Peer Testing
-
-#### Known Issues/Bugs & Problems Encountered
+Testing documentation can be found [HERE](../TESTING.md)
 
 -----
 
