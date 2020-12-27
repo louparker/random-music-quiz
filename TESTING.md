@@ -38,22 +38,12 @@ The site's browser compatibility was manually checked using [BrowserStack](https
 
 I also tested the sites responsiveness at all viewports available on chrome's developer tools. Details also included in the table below.
 
-Note: R.A.E = Renders As Expected
-
 |Criterea             |Galaxy S10+|Moto G4   |Galaxy S5 |Pixel 2   |Pixel 2 XL|iPhone SE |iPhone 6/7/8|iPhone 6/7/8 Plus|iPhone X  |iPad      |iPad Pro  |Surface Duo|Galaxy Fold|Laptop (+1024px)|Laptop (+1440px)|
 |---------------------|-----------|----------|----------|----------|----------|----------|------------|-----------------|----------|----------|----------|-----------|-----------|----------------|----------------|
-|X-SMALL < 576px
-|SMALL > 576px
-|MEDIUM > 768px
-|LARGE > 992px
-|EXTRA LARGE > 1200px
+|Renders As Expected? |PASS       |PASS      |PASS      |PASS      |PASS      |PASS      |PASS        |PASS             |PASS      |PASS      |PASS      |PASS       |PASS       |PASS            |PASS            |
 
 -----
 
 |Criteria              |Chrome v87   |Firefox v84  |Safari v14.0.2|Edge v87     |
 |----------------------|-------------|-------------|--------------|-------------|
-|X-SMALL < 576px       |
-|SMALL > 576px         |
-|MEDIUM > 768px        |
-|LARGE > 992px         |
-|EXTRA LARGE > 1200px  |
+|Renders As Expected?  |PASS         |PASS         |PASS          |PASS         |
