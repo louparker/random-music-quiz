@@ -1,21 +1,20 @@
 # The Random Music Quiz
 
-(image)
-
+![screenshot of site on different devices](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/responsive.png)
 
 # Project Description
 
 “The most random music quiz” (henceforth to be shortened to “TMRMQ”) is a quiz app in which the player answers 10 randomized questions within 3 difficulty levels & can then save their high score to a specific page that can be viewed at their leisure. The question and answer data is pulled from the “Open Trivia Database” API and fed into the app using Javascript. The name stems from the questions being wide ranging and varied within the music world.
 
-This is a live link to the site which is hosted on GitHub Pages.
-(link)
+Below is a live link to the site which is hosted on GitHub Pages.
+[HERE](https://louparker.github.io/random-music-quiz/index.html)
 
 ### Table Of Contents
 
 1. [Project Goals](#project-goals)
 2. [Target Audience](#target-audience)
 3. [UX Design](#ux-design)
-    - Strategy
+    - [Strategy](#strategy)
     - Owner Stories
     - User Stories
     - Scope

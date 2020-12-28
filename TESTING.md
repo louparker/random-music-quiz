@@ -16,7 +16,7 @@ Throughout the development of this project, various proactive testing was done. 
 
 ### Code Validation
 
-W3C HTML Validator:
+#### W3C HTML Validator:
 Markup passed through without any errors
 
 INDEX.HTML
@@ -31,8 +31,8 @@ GAMEOVER.HTML
 HIGHSCORES.HTML
 ![screenshot of highscores page html validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/highscores%20html%20validator.png)
 
-Jigsaw CSS Validator
-Code passed through without any errors
+#### Jigsaw CSS Validator
+Code passed through without any errors. A warning regarding imported stylesheets was included but no action was taken toward this warning as the imported stylesheet is from a trusted & well known source.
 
 APP.CSS
 ![screenshot of index page css validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/app%20css%20validator.png)
@@ -46,7 +46,7 @@ GAMEOVER.CSS
 HIGHSCORES.CSS
 ![screenshot of highscores page css validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/highscores%20css%20validator.png)
 
-JSHint Javascript Code Quality Tool
+#### JSHint Javascript Code Quality Tool
 
 GAME.JS
 ![screenshot of game jshint page](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/game%20-%20jshint.png)
@@ -62,7 +62,7 @@ HIGHSCORES.JS
 
 ### Automated Testing
 
-LightHouse
+#### LightHouse
 
 Scores on the lighthouse test were generally good, with notes to eliminate render-blocking resources. The Bootstrap files were often the culprit. Due to the otherwise good scores, no fixes were taken at the time.
 
@@ -82,9 +82,9 @@ HIGHSCORES PAGE
 
 ### Responsiveness and Browser Compatibility
 
-The site's browser compatibility was manually checked using [BrowserStack](https://www.browserstack.com/live). I tested the compatibility on Chrome v87, Firefox v84, Safari, Edge v87. Details included in the table below.
+I tested the sites responsiveness at all viewports available on chrome's developer tools. Details also included in the table below.
 
-I also tested the sites responsiveness at all viewports available on chrome's developer tools. Details also included in the table below.
+The site's browser compatibility was also manually checked using [BrowserStack](https://www.browserstack.com/live). I tested the compatibility on Chrome v87, Firefox v84, Safari, Edge v87. Details included in the table below.
 
 |Criterea             |Galaxy S10+|Moto G4   |Galaxy S5 |Pixel 2   |Pixel 2 XL|iPhone SE |iPhone 6/7/8|iPhone 6/7/8 Plus|iPhone X  |iPad      |iPad Pro  |Surface Duo|Galaxy Fold|Laptop (+1024px)|Laptop (+1440px)|
 |---------------------|-----------|----------|----------|----------|----------|----------|------------|-----------------|----------|----------|----------|-----------|-----------|----------------|----------------|
