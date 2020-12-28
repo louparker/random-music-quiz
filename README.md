@@ -113,6 +113,8 @@ At this point, wireframes were created to have a visible reference point for the
 
 ![screenshot of home page balsamiq wireframe](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/index.png)
 
+<img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/index.png" alt="screenshot of home page balsamiq wireframe" width="300">
+
 The structure of this page as the home page is shared by most other pages in the web app. Actionable buttons on the lower half and information that needs to be taken in in the upper half of the page. Also due to the mobile first design ethos, the information is displayed in order of priority, top down. This concept will also continue throughout the web app.
 
 - GAME PAGE
