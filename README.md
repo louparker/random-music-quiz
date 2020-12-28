@@ -20,9 +20,9 @@ Below is a live link to the site which is hosted on GitHub Pages.
     - [Scope](#scope)
     - [Structure](#structure)
     - [Skeleton](#skeleton)
-    - [Wireframes](#wireframes)
+    - [Balsamiq Wireframes](#balsamiq-wireframes)
     - [Surface](#surface)
-4. [Design Choices](design-choices)
+4. [Design Choices](#design-choices)
     - [Font](#font)
     - [Color](#color)
     - [XD Mock-Ups](#xd-mock-ups)
@@ -109,7 +109,11 @@ At this point, wireframes were created to have a visible reference point for the
 
 #### Balsamiq Wireframes
 
-Home pic – The structure of this page as the home page is shared by most other pages in the web app. Actionable buttons on the lower half and information that needs to be taken in in the upper half of the page. Also due to the mobile first design ethos, the information is displayed in order of priority, top down. This concept will also continue throughout the web app.
+HOME PAGE
+
+
+
+The structure of this page as the home page is shared by most other pages in the web app. Actionable buttons on the lower half and information that needs to be taken in in the upper half of the page. Also due to the mobile first design ethos, the information is displayed in order of priority, top down. This concept will also continue throughout the web app.
 Game pic – This page starts with a Heads up display (HUD) which is familiar in most games, it is where all information to do with the ongoing status of the game is displayed. For this game specifically, score, time left and an exit button are included in the HUD. This is then followed by the question in the middle of the page, this is a good spot considering the priority of the current question, it is one of the first places the eyes will look. After this, there are the answer option buttons.
 Score pic – This page continues the simple information followed by actionable content concept. The score here is the priority content so it is placed in the middle followed by the actionable input and buttons.
 Highscores pic – This page is purely information based with one button at the bottom of the page to go back home. The highscores for each level are shown from easy to hard in a descending order.
@@ -127,7 +131,8 @@ I wanted the font to be something unusual, informal and unique. It needed to be 
 #### Color
 
 The colors for this web app needed to be quite bold and convey differing messages. Answer choices each have their own color, priority info (question, score & HUD) all have the same color background. There is was also a need to have good contrast for all elements which the chosen colors do provide.
-COLOR PALETTE PIC
+
+![screenshot of color palette](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/palette.png)
 
 #### XD Mock-Ups
 
@@ -229,7 +234,7 @@ Specified code usage includes:
 - [Google Fonts CSS import code](https://fonts.google.com/specimen/Londrina+Solid?category=Display&preview.text=THE%20MOST%20RANDOM%20MUSIC%20QUIZ&preview.text_type=custom&sidebar.open=true&selection.family=Londrina+Solid:wght@100;300;400;900#standard-styles)
 - [Tonny Garic Countdown Timer](https://jsfiddle.net/TonnyGaric/csj2b17L/). Used is game.js to create a functioning game timer.
 - [Open Trivia Database](https://opentdb.com/api_config.php). Used API for game question and answer data.
-- [Animista Scale Down Animation](https://animista.net/play/basic/scale-down/scale-down-hor-center). Used in game page when an answer is incorrect.
+- [Animista Animations](https://animista.net/play/basic/). Used at various points within project.
 - [Hover.css effects](https://ianlunn.github.io/Hover/). Used for hover effects at various points within project.
 
 The following sites were used for beautifying, optimizing images and adding correct vendor prefixes to my code:
