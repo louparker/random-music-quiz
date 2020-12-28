@@ -176,7 +176,7 @@ GitHub Pages – Deployment.
 
 ### Testing
 
-Testing documentation can be found [HERE](../TESTING.md)
+Testing documentation can be found [HERE](TESTING.md)
 
 -----
 
