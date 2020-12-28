@@ -102,7 +102,7 @@ a:visited {
 }
 
 .easy__btn {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 18rem;
     height: 6rem;
     background-color: #004b42;
@@ -113,7 +113,7 @@ a:visited {
 }
 
 .medium__btn {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 18rem;
     height: 6rem;
     background-color: #320c0f;
@@ -124,7 +124,7 @@ a:visited {
 }
 
 .hard__btn {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 18rem;
     height: 6rem;
     background-color: #cc3f0c;
