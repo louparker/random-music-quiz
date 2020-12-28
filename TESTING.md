@@ -54,38 +54,29 @@ I also tested the sites responsiveness at all viewports available on chrome's de
 
 |User Story                                      |Screenshot                  |Result                                                                                                           |
 |------------------------------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------|
-|As the site owner, I want to provide rich <br/>interactive experience to anyone that tries the <br/>game enough to make them want to play more.      |                            |Site owner is satisfied game provides a great overall experience.
-|As the site owner, I want to demonstrate new    |                            |Site owner is pleased the game works smoothly with no major errors, showcasing current skill level adequately.
-skills within JS & offer evidence of current 
-skill level in HTML and CSS.
-|As the site owner, I want all elements of the   |                            |Site owner is satisfied with functionality of all game elements, allowing for full immersion.
-game to function properly to provide full 
-immersion.
-|As a site user, I want to make sure all elements|                            |Site user is satisfied with functionality of game, confirms site owners skills in JS.
- of the game work well, to confirm the owners
-JS skills.
-|As a site user, I want to feel immersed in the  |                            |Site user is happy that they can play non-stop without any hiccups or errors in the game.
- game and not worry about lagging or errors.
-|As a site user, I want to get some sort of      |Image of answer animations  |Site user is pleased to see fun animation as feedback for scoring correct or incorrect.
-feedback when answering questions correct 
-or incorrect.
-|As a site user, I want to have a clear view     |Image of HUD                 |Site user is satisfied with HUD and placement of it, easy to see all important information.
-of my score and how much time is left for 
-each question.
-|As a site user, I want to be able to            |Image of rules               |Site user can quickly understand the game rules and would not have to go back to double check anything.
-understand the rules easily and not have to 
-go back to read them.
-|As a site user, I want all buttons to be        |Image of buttons             |Site user is satisfied that all buttons made sense & didn’t need to check what a specific button did.
-sematic so I don’t have to press anything to 
-“see what it does”.
-|As a site user, I want to be able to check      |Image of highscores page     |Site user was happy to be able to check high scores at any time, allowed for “replayability”.
-my high-scores whenever I want.
-|As a site user, I want to be able to exit       |Image of exit button         |Site user was pleased that they could quit the game and start over when necessary.
-the game when playing for whatever reason.
-|As a site user, I want to be able to choose a   |Image of difficulty buttons  |Site user was happy to see different difficulty levels to allow for further playability & learning.
-harder difficulty level to be top on all the 
-high-score leaderboards.
-|As a site user, I want to be enticed to         |Image of difficulty buttons  |Site user was pleased to learn that points are increased for higher difficulty levels.
-try the more difficult levels.
-|As a site user, I want the whole app to be      |                             |Site user was satisfied with the learning curve of the game, confident to show off & encourage others to play.
-easy to grasp so it is easy to show off.
+|As the site owner, I want to provide rich <br/>interactive experience to anyone that tries the <br/>game enough to make them want to play more.|                            |Site owner is satisfied game provides a great overall experience.
+|As the site owner, I want to demonstrate new <br/>skills within JS & offer evidence of current <br/> skill level in HTML and CSS.|                            |Site owner is pleased the game works smoothly with no major errors, showcasing current skill level adequately.
+
+|As the site owner, I want all elements of the <br/>game to function properly to provide full <br/> immersion.|                            |Site owner is satisfied with functionality of all game elements, allowing for full immersion.
+
+|As a site user, I want to make sure all elements <br/>of the game work well, to confirm the owners <br/> JS skills.|                            |Site user is satisfied with functionality of game, confirms site owners skills in JS.
+
+|As a site user, I want to feel immersed in the <br/>game and not worry about lagging or errors.|                            |Site user is happy that they can play non-stop without any hiccups or errors in the game.
+
+|As a site user, I want to get some sort of <br/>feedback when answering questions correct <br/>or incorrect.|Image of answer animations  |Site user is pleased to see fun animation as feedback for scoring correct or incorrect.
+
+|As a site user, I want to have a clear view <br/>of my score and how much time is left for <br/> each question.|Image of HUD                 |Site user is satisfied with HUD and placement of it, easy to see all important information.
+
+|As a site user, I want to be able to <br/>understand the rules easily and not have to <br/>go back to read them.|Image of rules               |Site user can quickly understand the game rules and would not have to go back to double check anything.
+
+|As a site user, I want all buttons to be <br/>sematic so I don’t have to press anything to <br/>“see what it does”.|Image of buttons             |Site user is satisfied that all buttons made sense & didn’t need to check what a specific button did.
+
+|As a site user, I want to be able to check <br/>my high-scores whenever I want.|Image of highscores page     |Site user was happy to be able to check high scores at any time, allowed for “replayability”.
+
+|As a site user, I want to be able to exit <br/>the game when playing for whatever reason.|Image of exit button         |Site user was pleased that they could quit the game and start over when necessary.
+
+|As a site user, I want to be able to choose a <br/>harder difficulty level to be top on all the <br/> high-score leaderboards.|Image of difficulty buttons  |Site user was happy to see different difficulty levels to allow for further playability & learning.
+
+|As a site user, I want to be enticed to <br/>try the more difficult levels.|Image of difficulty buttons  |Site user was pleased to learn that points are increased for higher difficulty levels.
+
+|As a site user, I want the whole app to be <br/>easy to grasp so it is easy to show off.|                             |Site user was satisfied with the learning curve of the game, confident to show off & encourage others to play.
