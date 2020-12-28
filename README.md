@@ -155,17 +155,37 @@ The colors for this web app needed to be quite bold and convey differing message
 
 ![screenshot of home page XD wireframe](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/index%20xd.png)
 
+In final version, the following changes were made:
+- Colors were darkened to increase contrast for accessibility.
+- Dividing horizontal lines were added between rules to increase visual separation.
+- Highscores button was added underneath game buttons.
+
 - GAME PAGE
 
 ![screenshot of game page XD wireframe](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/game%20xd.png)
+
+In final version, the following changes were made:
+- Colors were darkened to increase contrast for accessibility.
+- Colors were adjusted to improve overall look of game.
+- Timer was added to HUD.
+- Button containers change depending on viewport size.
 
 - GAMEOVER PAGE
 
 ![screenshot of gameover page XD wireframe](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/gameover%20xd.png)
 
+In final version, the following changes were made:
+- name input box was added.
+- Button containers adjusted in size.
+- Heading title color darkened.
+
 - HIGHSCORES PAGE
 
 ![screenshot of highscores page XD wireframe](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/highscores%20xd.png)
+
+In final version, the following changes were made:
+- further high score container boxes were added for respective levels.
+- Heading title color darkened.
 
 #### Design Wrap-Up
 
