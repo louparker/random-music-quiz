@@ -15,18 +15,18 @@ Below is a live link to the site which is hosted on GitHub Pages.
 2. [Target Audience](#target-audience)
 3. [UX Design](#ux-design)
     - [Strategy](#strategy)
-    - Owner Stories
-    - User Stories
-    - Scope
-    - Structure
-    - Skeleton
-    - Wireframes
-    - Surface
+    - [Owner Stories](#owner-stories)
+    - [User Stories](#user-stories)
+    - [Scope](#scope)
+    - [Structure](#structure)
+    - [Skeleton](#skeleton)
+    - [Wireframes](#wireframes)
+    - [Surface](#surface)
 4. [Design Choices](design-choices)
-    - Font
-    - Color
-    - XD Mock-Ups
-    - Design Wrap-Up
+    - [Font](#font)
+    - [Color](#color)
+    - [XD Mock-Ups](#xd-mock-ups)
+    - [Design Wrap-Up](#design-wrap-up)
 5. [Features](features)
 6. [Features Left To Implement](features-left-to-implement)
 7. [Technologies Used](technologies-used)
@@ -162,14 +162,14 @@ I wanted the site to provide quite simple but fresh feeling to the user. The des
 
 ### Technologies Used
 
-VSCode (+ extensions) – Code editor of choice.
-Bootstrap – For layout purposes.
-Google Fonts – Font choice.
-tobiasahlin.com – Loading animation code.
-Open Trivia Database – API for quiz data.
-animista.net – Animations.
-Hover.css – Animations.
-GitHub Pages – Deployment.
+- VSCode (+ extensions) – Code editor of choice.
+- Bootstrap – For layout purposes.
+- Google Fonts – Font choice.
+- tobiasahlin.com – Loading animation code.
+- Open Trivia Database – API for quiz data.
+- animista.net – Animations.
+- Hover.css – Animations.
+- GitHub Pages – Deployment.
 
 -----
 

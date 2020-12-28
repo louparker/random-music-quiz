@@ -32,7 +32,7 @@ HIGHSCORES.HTML
 ![screenshot of highscores page html validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/highscores%20html%20validator.png)
 
 #### Jigsaw CSS Validator
-Code passed through without any errors. A warning regarding imported stylesheets was included but no action was taken toward this warning as the imported stylesheet is from a trusted & well known source.
+Code passed through without any errors. A warning regarding imported stylesheets was included but no action was taken toward this warning as the imported stylesheet is from a trusted & well known source. There was also a warning regarding webkit prefixes on some animations I used from a specific site. No immediate action was taken but a note was made to see if the specified prefixes are necessary or can be updated.
 
 APP.CSS
 ![screenshot of index page css validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/app%20css%20validator.png)
