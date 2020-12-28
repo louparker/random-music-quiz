@@ -19,16 +19,64 @@ Throughout the development of this project, various proactive testing was done. 
 W3C HTML Validator:
 Markup passed through without any errors
 
+index.html
+
+
+game.html
+
+
+gameover.html
+
+
+highscores.html
+
+
 Jigsaw CSS Validator
 Code passed through without any errors
 
+index.css
+
+
+game.css
+
+
+gameover.css
+
+
+highscores.css
+
+
 JSHint Javascript Code Quality Tool
+
+game.js
+
+
+gameover.js
+
+
+highscores.js
+
+
 
 -----
 
 ### Automated Testing
 
 LightHouse
+
+Scores on the lighthouse test were generally good, with notes to eliminate render-blocking resources. The Bootstrap files were often the culprit. Due to the otherwise good scores, no fixes were taken at the time.
+
+index.html
+
+
+game.html
+
+
+gameover.html
+
+
+highscores.html
+
 
 -----
 
@@ -73,8 +121,17 @@ I also tested the sites responsiveness at all viewports available on chrome's de
 
 ### Peer Testing
 
+|Feedback                                                                                 |Potential Solution                                                                             |
+|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+|Questions can be so specific so difficulty is high even on easy level.                   |Use another quiz API or hard-code specific own question set or create own API.                 |
+|Wanted some feedback on which answer was actually correct if incorrect answer was chosen.|Add a function to highlight correct answer in green while showing incorrect animation.         |
 
 -----
 
 ### Bugs
 
+|Bug Number |Test                                     |Result                                                  |Fix                                                                                        |
+|-----------|-----------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------|
+|001        |Redirection to page once game is finished|Unexpectedly redirected to 404 error page               |Use template literals and different location function (replace) to redirect to correct URL.|
+|002        |Answer questions on game page            |Game eventually starts to slow down/crash               |Remove multiple usage of restartInterval function which was causing recursion issues.      |
+|003        |Press play again button                  |Not redirected to respective difficulty level game page |Use template literals include correct difficulty level.                                    |
