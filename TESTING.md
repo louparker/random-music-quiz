@@ -54,9 +54,7 @@ I also tested the sites responsiveness at all viewports available on chrome's de
 
 |User Story                                      |Screenshot                  |Result                                                                                                           |
 |------------------------------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------|
-|As the site owner, I want to provide rich       |                            |Site owner is satisfied game provides a great overall experience.
-interactive experience to anyone that tries the 
-game enough to make them want to play more.
+|As the site owner, I want to provide rich <br/>interactive experience to anyone that tries the <br/>game enough to make them want to play more.      |                            |Site owner is satisfied game provides a great overall experience.
 |As the site owner, I want to demonstrate new    |                            |Site owner is pleased the game works smoothly with no major errors, showcasing current skill level adequately.
 skills within JS & offer evidence of current 
 skill level in HTML and CSS.
