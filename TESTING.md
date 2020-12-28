@@ -19,43 +19,43 @@ Throughout the development of this project, various proactive testing was done. 
 W3C HTML Validator:
 Markup passed through without any errors
 
-index.html
+INDEX.HTML
+![screenshot of index page html validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/index%20html%20validator.png)
 
+GAME.HTML
+![screenshot of game page html validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/game%20html%20validator.png)
 
-game.html
+GAMEOVER.HTML
+![screenshot of gameover page html validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/gameover%20html%20validator.png)
 
-
-gameover.html
-
-
-highscores.html
-
+HIGHSCORES.HTML
+![screenshot of highscores page html validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/highscores%20html%20validator.png)
 
 Jigsaw CSS Validator
 Code passed through without any errors
 
-index.css
+APP.CSS
+![screenshot of index page css validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/app%20css%20validator.png)
 
+GAME.CSS
+![screenshot of game page css validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/game%20css%20validator.png)
 
-game.css
+GAMEOVER.CSS
+![screenshot of gameover page css validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/gameover%20css%20validator.png)
 
-
-gameover.css
-
-
-highscores.css
-
+HIGHSCORES.CSS
+![screenshot of highscores page css validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/highscores%20css%20validator.png)
 
 JSHint Javascript Code Quality Tool
 
-game.js
+GAME.JS
+![screenshot of game jshint page](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/game%20-%20jshint.png)
 
+GAMEOVER.JS
+![screenshot of gameover jshint page](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/highscores%20-%20jshint.png)
 
-gameover.js
-
-
-highscores.js
-
+HIGHSCORES.JS
+![screenshot of highscores jshint page](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/highscores%20-%20jshint.png)
 
 
 -----
@@ -66,17 +66,17 @@ LightHouse
 
 Scores on the lighthouse test were generally good, with notes to eliminate render-blocking resources. The Bootstrap files were often the culprit. Due to the otherwise good scores, no fixes were taken at the time.
 
-index.html
+HOME PAGE
+![screenshot of index.html page](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/automated%20testing/homepage%20-%20lighthouse.png)
 
+GAME PAGE
+![screenshot of game.html page](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/automated%20testing/game-lighthouse.png)
 
-game.html
+GAMEOVER PAGE
+![screenshot of gameover.html page](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/automated%20testing/gameover%20-%20lighthouse.png)
 
-
-gameover.html
-
-
-highscores.html
-
+HIGHSCORES PAGE
+![screenshot of highscores.html page](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/automated%20testing/highscores%20-%20lighthouse.png)
 
 -----
 
