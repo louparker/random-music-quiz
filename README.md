@@ -27,12 +27,12 @@ Below is a live link to the site which is hosted on GitHub Pages.
     - [Color](#color)
     - [XD Mock-Ups](#xd-mock-ups)
     - [Design Wrap-Up](#design-wrap-up)
-5. [Features](features)
-6. [Features Left To Implement](features-left-to-implement)
-7. [Technologies Used](technologies-used)
-8. [Testing](testing)
-9. [Deployment](deployment)
-10. [Acknowledgements](acknowledgements)
+5. [Features](#features)
+6. [Features Left To Implement](#features-left-to-implement)
+7. [Technologies Used](#technologies-used)
+8. [Testing](#testing)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
 
 -----
 
@@ -170,6 +170,7 @@ I wanted the site to provide quite simple but fresh feeling to the user. The des
 - animista.net – Animations.
 - Hover.css – Animations.
 - GitHub Pages – Deployment.
+- Tinypng.com - Image compression.
 
 -----
 
@@ -181,15 +182,63 @@ Testing documentation can be found [HERE](TESTING.md)
 
 ### Deployment
 
+The site was developed in my own environment, I used VSCode as my code editor of choice & regularly used Git through a VSCode extension to commit and push changes to the project. I decided to use VSCode over Gitpod (as I have used in previous projects and as is recommended by Code Institute) since I am quite comfortable with using it and the Git extension made it very easy to incorporate version control and regular commits into my workflow. It is also a very qidely used professional IDE which encourages me to spend as much time with it as I can now while I am still learning. The steps to deploy the project onto GitHub Pages from its GitHub repository are listed below.
 
+1. Log in to GitHub.
+2. Select louparker/random-music-quiz from the list of repositories to the left of the screen.
+3. Once in the repository, press the settings button from the menu list toward the top of the page (if using a smaller device, press the 3 dots button or scroll through the menu until you see it).
+4. Scroll down to the GitHub Pages section.
+5. In the "Source" mini section, press the drop down selector which says none, from the list it opens up, select master/main.
+6. The page will then refresh give you a clickable link (back in the GitHub Pages section) to your newly deployed site (the site can take up to 60 seconds to go live).
+
+#### Run Project Locally
+
+These are the steps to take to work on the code in a local development environment. These steps are specific to VSCode but steps for other IDE's will be included too.
+
+1. Click on this link to be taken to the repository main page: [HERE](https://github.com/louparker/random-music-quiz).
+2. Press the code button.
+3. Copy the given link to your clipboard.
+4. (For VSCode Users) Open VSCode, press command, shift, p (command, control, p for windows users) to open the command palette. Type clone and press enter, then paste the URL from the GitHub repository. The repository will now be cloned into your local environment and can be edited.
+4. (For General Use) Open your local IDE of choice, open the terminal and navigate to the directory you wish the repository to be cloned to. Once in the chosen directory, type `git clone`, then paste the URL from the GitHub repository. It should look like this:
+
+`git clone https://github.com/louparker/random-music-quiz.git`
+
+5. Press enter, you should now have a local version of the repository successfully cloned.
+
+If you would like to use Gitpod as a development environment, you can follow these steps to clone the repository (It is recommended to use Chrome browser when using GitPod so these steps assumes you have it installed.):
+
+1. Create a GitHub account, if you do not already have one.
+2. Search for the [Gitpod Browser extenstion](https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki?hl=en) within the Chrome extentions store.
+3. Install the extension and restart the browser.
+4. Log in to Gitpod with your GitHub account information.
+5. Click on this link to be taken to the repository main page: [HERE](https://github.com/louparker/random-music-quiz).
+6. Click on the Gitpod button and this will create a new Gitpod workspace which can be edited locally.
 
 -----
 
 ### Credits
 
+#### Content
+All design, content and code (unless specified below) was created by myself.
+
+Specified code usage includes:
+- [James Q Quick tutorial to build a quiz app](https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript). Javascript code excerpts and concepts were taken from this tutorial.
+- [Emmet HTML boilerplate](https://docs.emmet.io/cheat-sheet/)
+- [Bootstrap layout components](https://getbootstrap.com/docs/4.5/layout/overview/)
+- [Tobias Ahlin Loading Animation](https://tobiasahlin.com/spinkit/). Used as loading screen between index and game pages.
+- [Google Fonts CSS import code](https://fonts.google.com/specimen/Londrina+Solid?category=Display&preview.text=THE%20MOST%20RANDOM%20MUSIC%20QUIZ&preview.text_type=custom&sidebar.open=true&selection.family=Londrina+Solid:wght@100;300;400;900#standard-styles)
+- [Tonny Garic Countdown Timer](https://jsfiddle.net/TonnyGaric/csj2b17L/). Used is game.js to create a functioning game timer.
+- [Open Trivia Database](https://opentdb.com/api_config.php). Used API for game question and answer data.
+- [Animista Scale Down Animation](https://animista.net/play/basic/scale-down/scale-down-hor-center). Used in game page when an answer is incorrect.
+- [Hover.css effects](https://ianlunn.github.io/Hover/). Used for hover effects at various points within project.
+
+The following sites were used for beautifying, optimizing images and adding correct vendor prefixes to my code:
+- [Autoprefixer CSS](https://autoprefixer.github.io/)
+- [Code Beautify](https://codebeautify.org/)
+- [TinyPNG](https://tinypng.com/)
 
 
------
+#### Acknowledgements
 
-### Acknowledgements
-
+- Stack Overflow was a constant help throughout the development of this project as evidenced by this quite helpful answer when trying to [fix a bug](https://stackoverflow.com/questions/65383311/html-javascript-slow-crashing-on-quiz-app). 
+- Special thanks to my mentor Maranatha for regular words of wisdom and helping guide me to the right conclusions.
