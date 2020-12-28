@@ -68,3 +68,13 @@ I also tested the sites responsiveness at all viewports available on chrome's de
 |As a site user, I want to be able to choose a <br/>harder difficulty level to be top on all the <br/> high-score leaderboards.|Image of difficulty buttons  |Site user was happy to see different difficulty levels to allow for further playability & learning.
 |As a site user, I want to be enticed to <br/>try the more difficult levels.|Image of difficulty buttons  |Site user was pleased to learn that points are increased for higher difficulty levels.
 |As a site user, I want the whole app to be <br/>easy to grasp so it is easy to show off.|                             |Site user was satisfied with the learning curve of the game, confident to show off & encourage others to play.
+
+-----
+
+### Peer Testing
+
+
+-----
+
+### Bugs
+

@@ -164,8 +164,8 @@
 }
 
 .choice__text {
-    padding: 4rem 7rem;
-    font-size: 2rem;
+    padding: .5rem 7rem;
+    font-size: 1.5rem;
 }
 
 .choice__text:hover {
@@ -352,6 +352,8 @@
         height: 10rem;
 
     }
+
+    
 }
 
 @media (min-width: 768px) {
@@ -397,7 +399,11 @@
         font-size: 3.5rem;
         width: 50rem;
         height: 15rem;
+    }
 
+    .choice__text {
+        padding: 4rem 12rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -446,8 +452,8 @@
 
     .choice__container {
         font-size: 3rem;
-        width: 30rem;
-        height: 20rem;
+        width: 24rem;
+        height: 34rem;
         margin: 0 2rem 9rem 2rem;
     }
 
@@ -472,7 +478,7 @@
     .choice__container {
         font-size: 3rem;
         width: 32rem;
-        height: 18rem;
+        height: 22rem;
         margin: 0 1rem 9rem 1rem;
     }
 }
