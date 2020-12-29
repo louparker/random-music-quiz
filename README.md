@@ -184,7 +184,7 @@ In final version, the following changes were made:
 <img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/highscores%20xd.png" alt="screenshot of highscores page XD wireframe" width="300">
 
 In final version, the following changes were made:
-- further high score container boxes were added for respective levels.
+- Further high score container boxes were added for respective levels.
 - Heading title color darkened.
 
 #### Design Wrap-Up
@@ -195,16 +195,45 @@ I wanted the site to provide quite simple but fresh feeling to the user. The des
 
 ### Features
 
--	Level Select on homepage - Within the home page, the user has the ability to choose a difficulty level. This was done to increase the accessibility of the game but also to increase the playability and keep people coming back to play more.
--	Animations on home page buttons – The buttons on the homepage have a bouncing animation when hovering over them. This was done to increase the interactivity of the home page and give feedback that these buttons are actionable. Buttons on other pages also have the same bouncing animation for consistency.
--	Exit button on game page – This button is important as it gives players an easy way to either restart or completely quit the game. It redirects players to the homepage. It also has a scale down animation when hovered over and the cursor changes to a pointer which both indicate that something happens then this is clicked.
--	Timer on game page – The timer is an important game feature which adds pressure to the players game experience. It is restarted whenever a question is answered or when it reaches zero.
--	Score counter on game page – The score counter is another important game feature which lets the player know their current score at all times. The points scored is different for each difficulty, so this allows the player to also see that difference while playing.
--	Heads Up Display (HUD) on game page – The HUD as a whole is an important aspect of nearly all games. All relevant information for the player is stored there so it was important that the elements that make up the HUD were displayed with clarity and in a way that made sense for the gamer.
--	Animations on game page – The animations on the game page serve to let the player know if their chosen answer is correct or incorrect. The correct twisting animation along with the color change to green is intended to give a sense of victory and translate into “that’s correct” without using words. The incorrect squeezing animation with the color change to red indicates the opposite, “that is incorrect”.
--	Save score on game-over page – The save button on the game-over page allows the player to save their score in local storage. If it is amongst the top 5 scores for each level then it will be displayed on the high scores page.
--   Max Length on Gameover Page Input - The input element has a maxlength attribute of 10 characters to make sure the highscores containers keep a tidy look and that long names do not take up more than one line.
--	High-scores Page – The high scores page allows the players to see where they rank amongst other players in terms of scoring for each difficulty level. The page is accessible from the homepage.
+#### Level Select on homepage 
+
+Within the home page, the user has the ability to choose a difficulty level. This was done to increase the accessibility of the game but also to increase the playability and keep people coming back to play more.
+
+#### Animations on home page buttons
+
+The buttons on the homepage have a bouncing animation when hovering over them. This was done to increase the interactivity of the home page and give feedback that these buttons are actionable. Buttons on the gameover page also have the same bouncing animation for consistency.
+
+#### Exit button on game page
+
+This button is important as it gives players an easy way to either restart or completely quit the game. It redirects players to the homepage. It also has a scale down animation when hovered over and the cursor changes to a pointer which both indicate that something happens then this is clicked.
+
+#### Timer on game page
+
+The timer is an important game feature which adds pressure to the players game experience. It is restarted whenever a question is answered or when it reaches zero.
+
+#### Score counter on game page
+
+The score counter is another important game feature which lets the player know their current score at all times. The points scored is different for each difficulty, so this allows the player to also see that difference while playing.
+
+#### Heads Up Display (HUD) on game page
+
+The HUD as a whole is an important aspect of nearly all games. All relevant information for the player is stored there so it was important that the elements that make up the HUD were displayed with clarity and in a way that made sense for the gamer.
+
+#### Animations on game page
+
+The animations on the game page serve to let the player know if their chosen answer is correct or incorrect. The correct twisting animation along with the color change to green is intended to give a sense of victory and translate into “that’s correct” without using words. The incorrect squeezing animation with the color change to red indicates the opposite, “that is incorrect”.
+
+#### Save score on game-over page
+
+The save button on the game-over page allows the player to save their score in local storage. If it is amongst the top 5 scores for each level then it will be displayed on the high scores page.
+
+#### Max Length on Gameover Page Input
+
+The input element has a maxlength attribute of 10 characters to make sure the highscores containers keep a tidy look and that long names do not take up more than one line.
+
+#### High-scores Page
+
+The high scores page allows the players to see where they rank amongst other players in terms of scoring for each difficulty level. The page is accessible from the homepage.
 
 
 -----
@@ -232,7 +261,7 @@ I wanted the site to provide quite simple but fresh feeling to the user. The des
 
 ### Testing
 
-Testing documentation can be found [HERE](TESTING.md)
+Testing documentation can be found [HERE](testing.md)
 
 -----
 
