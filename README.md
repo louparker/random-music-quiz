@@ -109,29 +109,27 @@ At this point, wireframes were created to have a visible reference point for the
 
 #### Balsamiq Wireframes
 
-- HOME PAGE
+##### HOME PAGE
 
 <img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/index.png" alt="screenshot of home page balsamiq wireframe" width="300">
 
 The structure of this page as the home page is shared by most other pages in the web app. Actionable buttons on the lower half and information that needs to be taken in in the upper half of the page. Also due to the mobile first design ethos, the information is displayed in order of priority, top down. This concept will also continue throughout the web app.
 
-- GAME PAGE
+##### GAME PAGE
 
 <img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/game.png" alt="screenshot of game page balsamiq wireframe" width="300">
 
 This page starts with a Heads up display (HUD) which is familiar in most games, it is where all information to do with the ongoing status of the game is displayed. For this game specifically, score, time left and an exit button are included in the HUD. This is then followed by the question in the middle of the page, this is a good spot considering the priority of the current question, it is one of the first places the eyes will look. After this, there are the answer option buttons.
 
-- GAMEOVER PAGE 
+##### GAMEOVER PAGE 
 
 <img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/gameover.png" alt="screenshot of gameover page balsamiq wireframe" width="300">
 
 This page continues the simple information followed by actionable content concept. The score here is the priority content so it is placed in the middle followed by the actionable input and buttons.
 
-- HIGHSCORES PAGE
+##### HIGHSCORES PAGE
 
 <img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/highscores.png" alt="screenshot of highscores page balsamiq wireframe" width="300">
-
-![]()
 
 This page is purely information based with one button at the bottom of the page to go back home. The highscores for each level are shown from easy to hard in a descending order.
 
@@ -153,7 +151,7 @@ The colors for this web app needed to be quite bold and convey differing message
 
 #### XD Mock-Ups
 
-- HOME PAGE
+##### HOME PAGE
 
 <img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/index%20xd.png" alt="screenshot of home page XD wireframe" width="300">
 
@@ -162,7 +160,7 @@ In final version, the following changes were made:
 - Dividing horizontal lines were added between rules to increase visual separation.
 - Highscores button was added underneath game buttons.
 
-- GAME PAGE
+##### GAME PAGE
 
 <img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/game%20xd.png" alt="screenshot of game page XD wireframe" width="300">
 
@@ -172,7 +170,7 @@ In final version, the following changes were made:
 - Timer was added to HUD.
 - Button containers change depending on viewport size.
 
-- GAMEOVER PAGE
+##### GAMEOVER PAGE
 
 <img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/gameover%20xd.png" alt="screenshot of gameover page XD wireframe" width="300">
 
@@ -181,7 +179,7 @@ In final version, the following changes were made:
 - Button containers adjusted in size.
 - Heading title color darkened.
 
-- HIGHSCORES PAGE
+##### HIGHSCORES PAGE
 
 <img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/highscores%20xd.png" alt="screenshot of highscores page XD wireframe" width="300">
 
