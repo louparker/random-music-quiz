@@ -1,5 +1,5 @@
 const question = document.getElementById("question");
-const choices = Array.from(document.getElementsByClassName("choice__text"));
+const choices = Array.from(document.getElementsByClassName("choice__container"));
 const scoreText = document.getElementById('score');
 const timer = document.getElementById("timer");
 const game = document.getElementById("game");
@@ -120,10 +120,10 @@ choices.forEach((choice) => {
             incrementScore(levelScore);
         }
 
-        selectedChoice.parentElement.classList.add(classToApply);
+        selectedChoice.classList.add(classToApply);
 
         setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply);
+            selectedChoice.classList.remove(classToApply);
             getNewQuestion();
         }, 1000);
     });

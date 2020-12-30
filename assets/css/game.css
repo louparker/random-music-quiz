@@ -152,7 +152,7 @@
 }
 
 .choice__container {
-    padding: 2rem 2rem;
+    padding: 2rem;
     font-size: 1.5rem;
     width: 24rem;
     height: 10rem;
@@ -163,12 +163,7 @@
     margin: 0 auto 1rem auto;
 }
 
-.choice__text {
-    padding: .5rem 7rem;
-    font-size: 1.5rem;
-}
-
-.choice__text:hover {
+.choice__container:hover {
     cursor: pointer;
 }
 
@@ -401,10 +396,9 @@
         height: 15rem;
     }
 
-    .choice__text {
+    /* .choice__text {
         padding: 4rem 12rem;
-        font-size: 2.5rem;
-    }
+    } */
 }
 
 @media (min-width: 1200px) {
