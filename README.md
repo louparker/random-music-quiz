@@ -261,7 +261,7 @@ The high scores page allows the players to see where they rank amongst other pla
 
 ### Testing
 
-Testing documentation can be found [HERE](testing.md)
+Testing documentation can be found [HERE](testing_1.md)
 
 -----
 
