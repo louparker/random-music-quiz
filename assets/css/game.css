@@ -394,11 +394,8 @@
         font-size: 3.5rem;
         width: 50rem;
         height: 15rem;
+        margin: 0 0 1rem 0;
     }
-
-    /* .choice__text {
-        padding: 4rem 12rem;
-    } */
 }
 
 @media (min-width: 1200px) {
@@ -417,16 +414,16 @@
         font-size: 11rem;
         height: 124px;
     }
-    
+
     .timer__label {
         font-size: 4rem;
     }
-    
+
     .scoreboard {
         font-size: 11rem;
         height: 124px;
     }
-    
+
     .score__label {
         font-size: 4rem;
     }
