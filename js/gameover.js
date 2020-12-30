@@ -18,11 +18,11 @@ playerName.addEventListener("keyup", () =>{
 });
 
 //forcing the play again button to go back to correct difficulty game page
-backToGame = e => {
+const backToGame = e => {
     return window.location.replace(`${baseUrl}/game.html?mode=${gameDifficulty}`);
 };
 //preventing form from submitting to new page
-saveHighScore = e => {
+const saveHighScore = e => {
     e.preventDefault();
 
 //setting up score data for highscores page

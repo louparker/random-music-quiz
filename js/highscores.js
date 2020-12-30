@@ -6,17 +6,14 @@ const mediumHighScores = JSON.parse(localStorage.getItem("mediumHighScores")) ||
 const hardHighScores = JSON.parse(localStorage.getItem("hardHighScores")) || [];
 
 //grabbing the high scores data for each difficulty & adding a new list item for each one.
-easyScoresList.innerHTML = 
-easyHighScores.map( score => {
+easyScoresList.innerHTML = easyHighScores.map( score => {
     return(`<li class="high-score">${score.name} - ${score.score}</li>`);
 }).join("");
 
-mediumScoresList.innerHTML = 
-mediumHighScores.map( score => {
+mediumScoresList.innerHTML = mediumHighScores.map( score => {
     return(`<li class="high-score">${score.name} - ${score.score}</li>`);
 }).join("");
 
-hardScoresList.innerHTML = 
-hardHighScores.map( score => {
+hardScoresList.innerHTML = hardHighScores.map( score => {
     return(`<li class="high-score">${score.name} - ${score.score}</li>`);
 }).join("");

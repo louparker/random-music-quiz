@@ -143,7 +143,7 @@ const getNewQuestion = () => {
     }
 
     questionCounter ++;
-    
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question;
