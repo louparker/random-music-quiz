@@ -195,7 +195,7 @@ I wanted the site to provide quite simple but fresh feeling to the user. The des
 
 ### Features
 
-#### Level Select on homepage 
+#### Level Select on homepage
 
 Within the home page, the user has the ability to choose a difficulty level. This was done to increase the accessibility of the game but also to increase the playability and keep people coming back to play more.
 
