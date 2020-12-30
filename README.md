@@ -121,7 +121,7 @@ The structure of this page as the home page is shared by most other pages in the
 
 This page starts with a Heads up display (HUD) which is familiar in most games, it is where all information to do with the ongoing status of the game is displayed. For this game specifically, score, time left and an exit button are included in the HUD. This is then followed by the question in the middle of the page, this is a good spot considering the priority of the current question, it is one of the first places the eyes will look. After this, there are the answer option buttons.
 
-##### GAMEOVER PAGE 
+##### GAMEOVER PAGE
 
 <img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/gameover.png" alt="screenshot of gameover page balsamiq wireframe" width="300">
 
@@ -325,5 +325,5 @@ The following sites were used for beautifying, optimizing images and adding corr
 
 #### Acknowledgements
 
-- Stack Overflow was a constant help throughout the development of this project as evidenced by this quite helpful answer when trying to [fix a bug](https://stackoverflow.com/questions/65383311/html-javascript-slow-crashing-on-quiz-app). 
+- Stack Overflow was a constant help throughout the development of this project as evidenced by this quite helpful answer when trying to [fix a bug](https://stackoverflow.com/questions/65383311/html-javascript-slow-crashing-on-quiz-app).
 - Special thanks to my mentor Maranatha for regular words of wisdom and helping guide me to the right conclusions.
