@@ -111,25 +111,33 @@ At this point, wireframes were created to have a visible reference point for the
 
 ##### HOME PAGE
 
-<img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/index.png" alt="screenshot of home page balsamiq wireframe" width="300">
+- [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/balsamiq/desk-bal-home.png)
+- [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-home.png)
+- [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/balsamiq/index.png)
 
 The structure of this page as the home page is shared by most other pages in the web app. Actionable buttons on the lower half and information that needs to be taken in in the upper half of the page. Also due to the mobile first design ethos, the information is displayed in order of priority, top down. This concept will also continue throughout the web app.
 
 ##### GAME PAGE
 
-<img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/game.png" alt="screenshot of game page balsamiq wireframe" width="300">
+- [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/balsamiq/desk-bal-game.png)
+- [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-game.png)
+- [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/balsamiq/game.png)
 
 This page starts with a Heads up display (HUD) which is familiar in most games, it is where all information to do with the ongoing status of the game is displayed. For this game specifically, score, time left and an exit button are included in the HUD. This is then followed by the question in the middle of the page, this is a good spot considering the priority of the current question, it is one of the first places the eyes will look. After this, there are the answer option buttons.
 
 ##### GAMEOVER PAGE
 
-<img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/gameover.png" alt="screenshot of gameover page balsamiq wireframe" width="300">
+- [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/balsamiq/desk-bal-gameover.png)
+- [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-gameover.png)
+- [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/balsamiq/gameover.png)
 
 This page continues the simple information followed by actionable content concept. The score here is the priority content so it is placed in the middle followed by the actionable input and buttons.
 
 ##### HIGHSCORES PAGE
 
-<img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/balsamiq/highscores.png" alt="screenshot of highscores page balsamiq wireframe" width="300">
+- [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/balsamiq/desk-bal-highscores.png)
+- [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-highscores.png)
+- [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/balsamiq/highscores.png)
 
 This page is purely information based with one button at the bottom of the page to go back home. The highscores for each level are shown from easy to hard in a descending order.
 
@@ -153,7 +161,9 @@ The colors for this web app needed to be quite bold and convey differing message
 
 ##### HOME PAGE
 
-<img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/index%20xd.png" alt="screenshot of home page XD wireframe" width="300">
+- [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/xd/desk-xd-home.png)
+- [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/xd/tab-xd-home.png)
+- [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/xd/index%20xd.png)
 
 In final version, the following changes were made:
 - Colors were darkened to increase contrast for accessibility.
@@ -162,7 +172,9 @@ In final version, the following changes were made:
 
 ##### GAME PAGE
 
-<img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/game%20xd.png" alt="screenshot of game page XD wireframe" width="300">
+- [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/xd/desk-xd-game.png)
+- [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/xd/tab-xd-game.png)
+- [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/xd/game%20xd.png)
 
 In final version, the following changes were made:
 - Colors were darkened to increase contrast for accessibility.
@@ -172,7 +184,9 @@ In final version, the following changes were made:
 
 ##### GAMEOVER PAGE
 
-<img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/gameover%20xd.png" alt="screenshot of gameover page XD wireframe" width="300">
+- [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/xd/desk-xd-gameover.png)
+- [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/xd/tab-xd-gameover.png)
+- [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/xd/gameover%20xd.png)
 
 In final version, the following changes were made:
 - name input box was added.
@@ -181,7 +195,9 @@ In final version, the following changes were made:
 
 ##### HIGHSCORES PAGE
 
-<img src="https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/xd/highscores%20xd.png" alt="screenshot of highscores page XD wireframe" width="300">
+- [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/xd/desk-xd-highscores.png)
+- [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/xd/tab-xd-highscores.png)
+- [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/xd/highscores%20xd.png)
 
 In final version, the following changes were made:
 - Further high score container boxes were added for respective levels.
