@@ -54,7 +54,7 @@ GAME.JS
 GAMEOVER.JS
 ![screenshot of gameover jshint page](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/gameover%20-%20jshint.png)
 
-- Two unused variables are being used iin another file (gameover.html).
+- Two unused variables are being used in another file (gameover.html).
 
 HIGHSCORES.JS
 ![screenshot of highscores jshint page](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/highscores%20-%20jshint.png)

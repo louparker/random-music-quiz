@@ -4,7 +4,7 @@ const scoreText = document.getElementById('score');
 const timer = document.getElementById("timer");
 const game = document.getElementById("game");
 const loader = document.getElementById("loader");
-const gameDifficulty = window.location.search.replace("?mode=", "");
+const gameDifficulty = window.location.search.replace("?mode=", "") || "easy";
 
 /* STARTING GAME */
 //game mechanics
@@ -101,6 +101,9 @@ const startGame = () => {
 const levelScore = gameDifficulty === "easy" ? 10
                 : gameDifficulty === "medium" ? 20
                 : 30;
+
+/* const levelSc = 
+ */
 
 const maxQuestions = 10;
 let baseUrl ="https://louparker.github.io/random-music-quiz";
