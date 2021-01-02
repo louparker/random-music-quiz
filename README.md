@@ -315,6 +315,16 @@ If you would like to use Gitpod as a development environment, you can follow the
 5. Click on this link to be taken to the repository main page: [HERE](https://github.com/louparker/random-music-quiz).
 6. Click on the Gitpod button and this will create a new Gitpod workspace which can be edited locally.
 
+#### Forking
+
+The steps below indicate how you can "fork" the project without effecting the main branch. This means you can edit it as a repository on your own GitHub profile.
+
+1. Log in to GitHub with your user credentials.
+2. Click on this link to be taken to this repository's main page: [HERE](https://github.com/louparker/random-music-quiz).
+3. To the right of the repository name, you see a "fork" button, press it.
+4. You now have a copy of this repository on your personal GitHub account.
+5. When you are happy with contributions of edits, you can press the "new pull request" button which allows the repository owner to include your work in the original project.
+
 -----
 
 ### Credits
