@@ -46,6 +46,7 @@ input {
 /* option buttons */
 button {
     color: #ffffff;
+    border: none;
 }
 
 button:visited {
