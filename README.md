@@ -258,6 +258,7 @@ The high scores page allows the players to see where they rank amongst other pla
 
 -	Bonus points based on time left.
 -	Modal if score wasn’t high enough for high scores page or to say it is there.
+-   Work more with reusability in Javascript code.
 
 -----
 
