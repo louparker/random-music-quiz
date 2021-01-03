@@ -24,14 +24,14 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
     .then(res => {
         return res.json();
     })
-//taking question data from API and formatting it to be used
+    //taking question data from API and formatting it to be used
     .then((loadedQuestions) => {
-         questions = loadedQuestions.results.map((loadedQuestion) => {
+        questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
                 question: loadedQuestion.question,
             };
 
-//taking answer data and choosing random place for corrent and incorrent answers
+            //taking answer data and choosing random place for corrent and incorrent answers
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
@@ -47,38 +47,38 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
             return formattedQuestion;
         });
 
-// timer
-//Setting correct time for each level
-if (gameDifficulty === "easy") {
-    timer.innerText = "90";
-} else if (gameDifficulty == "medium") {
-    timer.innerText = "80";
-} else {
-    timer.innerText = "70";
-}
-
-//function to start the timer on end of current time or start of new question
-function restartInterval(){
-    let seconds = document.getElementById("timer").textContent;
-    let countdown = setInterval(function() {
-        seconds--;
-
-
-//timer reaches zero restart function
-        document.getElementById("timer").textContent = seconds;
-        if (seconds <= 0) {
-            clearInterval(countdown);
-            localStorage.setItem("mostRecentScore", score);
-            return window.location.replace(`${baseUrl}/gameover.html?mode=${gameDifficulty}`);
+        // timer
+        //Setting correct time for each level
+        if (gameDifficulty === "easy") {
+            timer.innerText = "90";
+        } else if (gameDifficulty == "medium") {
+            timer.innerText = "80";
+        } else {
+            timer.innerText = "70";
         }
-    }, 1000);
-}
+
+        //function to start the timer on end of current time or start of new question
+        function restartInterval() {
+            let seconds = document.getElementById("timer").textContent;
+            let countdown = setInterval(function () {
+                seconds--;
+
+
+                //timer reaches zero restart function
+                document.getElementById("timer").textContent = seconds;
+                if (seconds <= 0) {
+                    clearInterval(countdown);
+                    localStorage.setItem("mostRecentScore", score);
+                    return window.location.replace(`${baseUrl}/gameover.html?mode=${gameDifficulty}`);
+                }
+            }, 1000);
+        }
 
 
 
-//confirming game data is all loaded, showing the game page and removing the loading screen
+        //confirming game data is all loaded, showing the game page and removing the loading screen
         fetchingData = false;
-        setTimeout( () => {
+        setTimeout(() => {
             game.classList.remove("hidden");
             loader.classList.add("hidden");
             startGame();
@@ -98,12 +98,12 @@ const startGame = () => {
 };
 
 //giving specific scores based on gae difficulty
-const levelScore = gameDifficulty === "easy" ? 10
-                : gameDifficulty === "medium" ? 20
-                : 30;
+const levelScore = gameDifficulty === "easy" ? 10 :
+    gameDifficulty === "medium" ? 20 :
+    30;
 
 const maxQuestions = 10;
-let baseUrl ="https://louparker.github.io/random-music-quiz";
+let baseUrl = "https://louparker.github.io/random-music-quiz";
 
 //checking if answers are correct or not
 choices.forEach((choice) => {
@@ -142,7 +142,7 @@ const getNewQuestion = () => {
         return window.location.replace(`${baseUrl}/gameover.html?mode=${gameDifficulty}`);
     }
 
-    questionCounter ++;
+    questionCounter++;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];

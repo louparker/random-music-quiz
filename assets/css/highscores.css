@@ -11,21 +11,24 @@
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
-            transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.5s;
-         -o-transition-duration: 0.5s;
-            transition-duration: 0.5s;
-  }
-  .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
     -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
     -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-         -o-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-            transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  }
+    -o-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
 
 /* Titles */
 .highscores__title {
@@ -42,46 +45,46 @@
 .scoreboards__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .level__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .score-box__container {
     width: 25rem;
     height: 30rem;
-    background-color:  #19231a;
+    background-color: #19231a;
     border-radius: 2rem;
     color: #ffffff;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 2rem auto;
 }
 
-.score-box__container > ul {
+.score-box__container>ul {
     text-align: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-size: 3rem;
     margin: 2rem;
     list-style: none;
@@ -93,21 +96,21 @@
     height: 5rem;
     border-radius: 1rem;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 2rem auto;
 }
 
-.go-home-btn__container > a {
+.go-home-btn__container>a {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 2rem 4rem;
     font-size: 2.5rem;
 }
@@ -127,7 +130,7 @@
         height: 40rem;
     }
 
-    .score-box__container > ul {
+    .score-box__container>ul {
         font-size: 5rem;
     }
 
@@ -136,7 +139,7 @@
         height: 8rem;
     }
 
-    .go-home-btn__container > a {
+    .go-home-btn__container>a {
         font-size: 3rem;
     }
 }
@@ -145,8 +148,8 @@
     .scoreboards__container {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
 
     .score-box__container {
@@ -154,7 +157,7 @@
         height: 45rem;
     }
 
-    .score-box__container > ul {
+    .score-box__container>ul {
         font-size: 4rem;
     }
 }
@@ -165,7 +168,7 @@
         height: 45rem;
     }
 
-    .score-box__container > ul {
+    .score-box__container>ul {
         font-size: 5rem;
     }
 }
