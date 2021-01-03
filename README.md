@@ -9,7 +9,7 @@
 Below is a live link to the site which is hosted on GitHub Pages.
 [HERE](https://louparker.github.io/random-music-quiz/index.html)
 
-### Table Of Contents
+## Table Of Contents
 
 1. [Project Goals](#project-goals)
 2. [Target Audience](#target-audience)
@@ -36,7 +36,7 @@ Below is a live link to the site which is hosted on GitHub Pages.
 
 -----
 
-### Project Goals
+## Project Goals
 
 The aims of this web app are as follows:
 -	Showcase JS development skills
@@ -46,7 +46,7 @@ The aims of this web app are as follows:
 
 -----
 
-### Target Audience
+## Target Audience
 
 -	A person interested in quiz trivia
 -	A person interested in music
@@ -56,20 +56,20 @@ The aims of this web app are as follows:
 
 -----
 
-### UX Design
+## UX Design
 
-#### Strategy
+### Strategy
 
 The aim of the project is to achieve a web app that provides value as a fun and interactive experience to all users, with a focus on ease of use, smooth functionality a unique look. When considering the target audience, the following owner and user stories were compiled.
 
-#### Owner Stories
+### Owner Stories
 
 
 -	As the site owner, I want to provide rich interactive experience to anyone that tries the game enough to make them want to play more.
 -	As the site owner, I want to demonstrate new skills within JS & offer evidence of current skill level in HTML and CSS.
 -	As the site owner, I want all elements of the game to function properly to provide full immersion.
 
-#### User Stories
+### User Stories
 
 -	As a site user, I want to make sure all elements of the game work well, to confirm the owners JS skills.
 -	As a site user, I want to feel immersed in the game and not worry about lagging or errors.
@@ -82,7 +82,7 @@ The aim of the project is to achieve a web app that provides value as a fun and 
 -	As a site user, I want to be able to choose a harder difficulty level to be top on all the high-score leaderboards
 -	As a site user, I want the whole app to be easy to grasp so it is easy to show off.
 
-#### Scope
+### Scope
 
 Based on the user stories and project aims, it was decided that the following features be included in the app:
 -	Questions and answers being pulled from an API.
@@ -97,19 +97,19 @@ The project was then split into sprints to ensure an even workload spread over t
 -	Sprint 2 – JavaScript Logic & functionality
 -	Sprint 3 – Testing & Debugging
 
-#### Structure
+### Structure
 
 From having played various quiz games, there was a general idea of how I wanted the app and each page to be structured. The following was used to solidify these ideas and create the final structure.
 -	Interaction design – Having a consistent theme of readable content (rules or questions) in the top/middle portions of the screen and actionable content (buttons) in the lower portion of the page. This provides a consistent interaction pattern which is quickly and easily assimilated.
 -	Information Design – The content is also arranged in a way to make the priority information visible and accessible first followed by actionable content. This ensures users of the site view the necessary content before seeing content that is clickable.
 
-#### Skeleton
+### Skeleton
 
 At this point, wireframes were created to have a visible reference point for the structure. I wanted to ensure there was enough simplicity, intuitive design and good UI design.
 
-#### Balsamiq Wireframes
+### Balsamiq Wireframes
 
-##### HOME PAGE
+#### HOME PAGE
 
 - [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/balsamiq/desk-bal-home.png)
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-home.png)
@@ -117,7 +117,7 @@ At this point, wireframes were created to have a visible reference point for the
 
 The structure of this page as the home page is shared by most other pages in the web app. Actionable buttons on the lower half and information that needs to be taken in in the upper half of the page. Also due to the mobile first design ethos, the information is displayed in order of priority, top down. This concept will also continue throughout the web app.
 
-##### GAME PAGE
+#### GAME PAGE
 
 - [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/balsamiq/desk-bal-game.png)
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-game.png)
@@ -125,7 +125,7 @@ The structure of this page as the home page is shared by most other pages in the
 
 This page starts with a Heads up display (HUD) which is familiar in most games, it is where all information to do with the ongoing status of the game is displayed. For this game specifically, score, time left and an exit button are included in the HUD. This is then followed by the question in the middle of the page, this is a good spot considering the priority of the current question, it is one of the first places the eyes will look. After this, there are the answer option buttons.
 
-##### GAMEOVER PAGE
+#### GAMEOVER PAGE
 
 - [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/balsamiq/desk-bal-gameover.png)
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-gameover.png)
@@ -133,7 +133,7 @@ This page starts with a Heads up display (HUD) which is familiar in most games, 
 
 This page continues the simple information followed by actionable content concept. The score here is the priority content so it is placed in the middle followed by the actionable input and buttons.
 
-##### HIGHSCORES PAGE
+#### HIGHSCORES PAGE
 
 - [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/balsamiq/desk-bal-highscores.png)
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-highscores.png)
@@ -141,25 +141,25 @@ This page continues the simple information followed by actionable content concep
 
 This page is purely information based with one button at the bottom of the page to go back home. The highscores for each level are shown from easy to hard in a descending order.
 
-#### Surface
+### Surface
 
 The final look of the web app as a whole was decided at this point. Colors, typography, animations and other design elements were considered with all decisions based on the requirement that they reinforce the meaning or value of the content.
 
-### Design Choices
+## Design Choices
 
-#### Font
+### Font
 
 I wanted the font to be something unusual, informal and unique. It needed to be easy to read but still enforce the “random” concept of the game. Font is chosen is “Londrina Solid”. The creator of the font cites its origins as from the streets of Sao Paulo, Brazil with the concept of urban confusion. The font also works well in both small/large font sizes and thick/thin font weights. This lends to the useability and scalability of the font and site as a whole.
 
-#### Color
+### Color
 
 The colors for this web app needed to be quite bold and convey differing messages. Answer choices each have their own color, priority info (question, score & HUD) all have the same color background. There is was also a need to have good contrast for all elements which the chosen colors do provide.
 
 ![screenshot of color palette](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/palette.png)
 
-#### XD Mock-Ups
+### XD Mock-Ups
 
-##### HOME PAGE
+#### HOME PAGE
 
 - [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/xd/desk-xd-home.png)
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/xd/tab-xd-home.png)
@@ -170,7 +170,7 @@ In final version, the following changes were made:
 - Dividing horizontal lines were added between rules to increase visual separation.
 - Highscores button was added underneath game buttons.
 
-##### GAME PAGE
+#### GAME PAGE
 
 - [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/xd/desk-xd-game.png)
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/xd/tab-xd-game.png)
@@ -182,7 +182,7 @@ In final version, the following changes were made:
 - Timer was added to HUD.
 - Button containers change depending on viewport size.
 
-##### GAMEOVER PAGE
+#### GAMEOVER PAGE
 
 - [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/xd/desk-xd-gameover.png)
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/xd/tab-xd-gameover.png)
@@ -193,7 +193,7 @@ In final version, the following changes were made:
 - Button containers adjusted in size.
 - Heading title color darkened.
 
-##### HIGHSCORES PAGE
+#### HIGHSCORES PAGE
 
 - [Desktop](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/desktop/xd/desk-xd-highscores.png)
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/xd/tab-xd-highscores.png)
@@ -203,58 +203,58 @@ In final version, the following changes were made:
 - Further high score container boxes were added for respective levels.
 - Heading title color darkened.
 
-#### Design Wrap-Up
+### Design Wrap-Up
 
 I wanted the site to provide quite simple but fresh feeling to the user. The design makes it easy to quickly understand and remember the game flow. The colors give meaning to elements and animations especially on the game page give direct feedback within the flow of the game.
 
 -----
 
-### Features
+## Features
 
-#### Level Select on homepage
+### Level Select on homepage
 
 Within the home page, the user has the ability to choose a difficulty level. This was done to increase the accessibility of the game but also to increase the playability and keep people coming back to play more.
 
-#### Animations on home page buttons
+### Animations on home page buttons
 
 The buttons on the homepage have a bouncing animation when hovering over them. This was done to increase the interactivity of the home page and give feedback that these buttons are actionable. Buttons on the gameover page also have the same bouncing animation for consistency.
 
-#### Exit button on game page
+### Exit button on game page
 
 This button is important as it gives players an easy way to either restart or completely quit the game. It redirects players to the homepage. It also has a scale down animation when hovered over and the cursor changes to a pointer which both indicate that something happens then this is clicked.
 
-#### Timer on game page
+### Timer on game page
 
 The timer is an important game feature which adds pressure to the players game experience. It is restarted whenever a question is answered or when it reaches zero.
 
-#### Score counter on game page
+### Score counter on game page
 
 The score counter is another important game feature which lets the player know their current score at all times. The points scored is different for each difficulty, so this allows the player to also see that difference while playing.
 
-#### Heads Up Display (HUD) on game page
+### Heads Up Display (HUD) on game page
 
 The HUD as a whole is an important aspect of nearly all games. All relevant information for the player is stored there so it was important that the elements that make up the HUD were displayed with clarity and in a way that made sense for the gamer.
 
-#### Animations on game page
+### Animations on game page
 
 The animations on the game page serve to let the player know if their chosen answer is correct or incorrect. The correct twisting animation along with the color change to green is intended to give a sense of victory and translate into “that’s correct” without using words. The incorrect squeezing animation with the color change to red indicates the opposite, “that is incorrect”.
 
-#### Save score on game-over page
+### Save score on game-over page
 
 The save button on the game-over page allows the player to save their score in local storage. If it is amongst the top 5 scores for each level then it will be displayed on the high scores page.
 
-#### Max Length on Gameover Page Input
+### Max Length on Gameover Page Input
 
 The input element has a maxlength attribute of 10 characters to make sure the highscores containers keep a tidy look and that long names do not take up more than one line.
 
-#### High-scores Page
+### High-scores Page
 
 The high scores page allows the players to see where they rank amongst other players in terms of scoring for each difficulty level. The page is accessible from the homepage.
 
 
 -----
 
-### Features Left To Implement
+## Features Left To Implement
 
 -	Bonus points based on time left.
 -	Modal if score wasn’t high enough for high scores page or to say it is there.
@@ -262,7 +262,7 @@ The high scores page allows the players to see where they rank amongst other pla
 
 -----
 
-### Technologies Used
+## Technologies Used
 
 - VSCode (+ extensions) – Code editor of choice.
 - Bootstrap – For layout purposes.
@@ -276,13 +276,13 @@ The high scores page allows the players to see where they rank amongst other pla
 
 -----
 
-### Testing
+## Testing
 
 Testing documentation can be found [HERE](testing.md)
 
 -----
 
-### Deployment
+## Deployment
 
 The site was developed in my own environment, I used VSCode as my code editor of choice & regularly used Git through a VSCode extension to commit and push changes to the project. I decided to use VSCode over Gitpod (as I have used in previous projects and as is recommended by Code Institute) since I am quite comfortable with using it and the Git extension made it very easy to incorporate version control and regular commits into my workflow. It is also a very qidely used professional IDE which encourages me to spend as much time with it as I can now while I am still learning. The steps to deploy the project onto GitHub Pages from its GitHub repository are listed below.
 
@@ -293,7 +293,7 @@ The site was developed in my own environment, I used VSCode as my code editor of
 5. In the "Source" mini section, press the drop down selector which says none, from the list it opens up, select master/main.
 6. The page will then refresh give you a clickable link (back in the GitHub Pages section) to your newly deployed site (the site can take up to 60 seconds to go live).
 
-#### Run Project Locally
+### Run Project Locally
 
 These are the steps to take to work on the code in a local development environment. These steps are specific to VSCode but steps for other IDE's will be included too.
 
@@ -316,7 +316,7 @@ If you would like to use Gitpod as a development environment, you can follow the
 5. Click on this link to be taken to the repository main page: [HERE](https://github.com/louparker/random-music-quiz).
 6. Click on the Gitpod button and this will create a new Gitpod workspace which can be edited locally.
 
-#### Forking
+### Forking
 
 The steps below indicate how you can "fork" the project without effecting the main branch. This means you can edit it as a repository on your own GitHub profile.
 
@@ -328,9 +328,9 @@ The steps below indicate how you can "fork" the project without effecting the ma
 
 -----
 
-### Credits
+## Credits
 
-#### Content
+### Content
 All design, content and code (unless specified below) was created by myself.
 
 Specified code usage includes:
@@ -350,7 +350,7 @@ The following sites were used for beautifying, optimizing images and adding corr
 - [TinyPNG](https://tinypng.com/)
 
 
-#### Acknowledgements
+### Acknowledgements
 
 - Stack Overflow was a constant help throughout the development of this project as evidenced by this quite helpful answer when trying to [fix a bug](https://stackoverflow.com/questions/65383311/html-javascript-slow-crashing-on-quiz-app).
 - Special thanks to my mentor Maranatha for regular words of wisdom and helping guide me to the right conclusions.
