@@ -31,7 +31,7 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&difficulty=${gameDiffic
                 question: loadedQuestion.question,
             };
 
-            //taking answer data and choosing random place for corrent and incorrent answers
+            //taking answer data and choosing random place for correct and incorrect answers
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
