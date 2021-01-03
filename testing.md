@@ -32,7 +32,7 @@ HIGHSCORES.HTML
 ![screenshot of highscores page html validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/highscores%20html%20validator.png)
 
 #### Jigsaw CSS Validator
-Code passed through without any errors. A warning regarding imported stylesheets was included but no action was taken toward this warning as the imported stylesheet is from a trusted & well known source. There was also a warning regarding webkit prefixes on some animations I used from a specific site. No immediate action was taken but a note was made to see if the specified prefixes are necessary or can be updated.
+Code passed through without any errors. A warning regarding imported stylesheets was included but no action was taken toward this warning as the imported stylesheet is from a trusted & well-known source. There was also a warning regarding WebKit prefixes on some animations I used from a specific site. No immediate action was taken but a note was made to see if the specified prefixes are necessary or can be updated.
 
 APP.CSS
 ![screenshot of index page css validator](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/validator%20testing/app%20css%20validator.png)
@@ -84,7 +84,7 @@ HIGHSCORES PAGE
 
 ### Responsiveness and Browser Compatibility
 
-I tested the sites responsiveness at all viewports available on chrome's developer tools. Details also included in the table below.
+I tested the responsiveness of the site at all viewports available on chrome's developer tools. Details also included in the table below.
 
 The site's browser compatibility was also manually checked using [BrowserStack](https://www.browserstack.com/live). I tested the compatibility on Chrome v87, Firefox v84, Safari, Edge v87. Details included in the table below.
 
@@ -106,12 +106,12 @@ The site's browser compatibility was also manually checked using [BrowserStack](
 |------------------------------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------|
 |As the site owner, I want to provide rich <br/>interactive experience to anyone that tries the <br/>game enough to make them want to play more.|                            |Site owner is satisfied game provides a great overall experience.
 |As the site owner, I want to demonstrate new <br/>skills within JS & offer evidence of current <br/> skill level in HTML and CSS.|                            |Site owner is pleased the game works smoothly with no major errors, showcasing current skill level adequately.
-|As the site owner, I want all elements of the <br/>game to function properly to provide full <br/> immersion.|                            |Site owner is satisfied with functionality of all game elements, allowing for full immersion.
-|As a site user, I want to make sure all elements <br/>of the game work well, to confirm the owners <br/> JS skills.|                            |Site user is satisfied with functionality of game, confirms site owners skills in JS.
+|As the site owner, I want all elements of the <br/>game to function properly to provide full <br/> immersion.|                            |Site owner is satisfied with the functionality of all game elements, allowing for full immersion.
+|As a site user, I want to make sure all elements <br/>of the game work well, to confirm the owners <br/> JS skills.|                            |Site user is satisfied with the functionality of the game, confirms site owners skills in JS.
 |As a site user, I want to feel immersed in the <br/>game and not worry about lagging or errors.|                            |Site user is happy that they can play non-stop without any hiccups or errors in the game.
 |As a site user, I want to get some sort of <br/>feedback when answering questions correct <br/>or incorrect.|[Correct-Animation] [Incorrect-Animation]  |Site user is pleased to see fun animation as feedback for scoring correct or incorrect.
 |As a site user, I want to have a clear view <br/>of my score and how much time is left for <br/> each question.|[Heads-Up-Display]|Site user is satisfied with HUD and placement of it, easy to see all important information.
-|As a site user, I want to be able to <br/>understand the rules easily and not have to <br/>go back to read them.|[Rules]|Site user can quickly understand the game rules and would not have to go back to double check anything.
+|As a site user, I want to be able to <br/>understand the rules easily and not have to <br/>go back to read them.|[Rules]|Site user can quickly understand the game rules and would not have to go back to double-check anything.
 |As a site user, I want all buttons to be <br/>sematic so I don’t have to press anything to <br/>“see what it does”.|[Semantic-Buttons]|Site user is satisfied that all buttons made sense & didn’t need to check what a specific button did.
 |As a site user, I want to be able to check <br/>my high-scores whenever I want.|[Highscores-Page]|Site user was happy to be able to check high scores at any time, allowed for “replayability”.
 |As a site user, I want to be able to exit <br/>the game when playing for whatever reason.|[Exit-Button]|Site user was pleased that they could quit the game and start over when necessary.
@@ -135,8 +135,8 @@ The site's browser compatibility was also manually checked using [BrowserStack](
 
 |Feedback                                                                                 |Potential Solution                                                                             |
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-|Questions can be so specific so difficulty is high even on easy level.                   |Use another quiz API or hard-code specific own question set or create own API.                 |
-|Wanted some feedback on which answer was actually correct if incorrect answer was chosen.|Add a function to highlight correct answer in green while showing incorrect animation.         |
+|Questions can be so specific so the difficulty is high even on the easy level.                   |Use another quiz API or hard-code specific own question set or create own API.                 |
+|Wanted some feedback on which answer was correct if the incorrect answer was chosen.|Add a function to highlight correct answer in green while showing incorrect animation.         |
 
 -----
 
@@ -144,6 +144,6 @@ The site's browser compatibility was also manually checked using [BrowserStack](
 
 |Bug Number |Test                                     |Result                                                  |Fix                                                                                        |
 |-----------|-----------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------|
-|001        |Redirection to page once game is finished|Unexpectedly redirected to 404 error page               |Use template literals and different location function (replace) to redirect to correct URL.|
-|002        |Answer questions on game page            |Game eventually starts to slow down/crash               |Remove multiple usage of restartInterval function which was causing recursion issues.      |
+|001        |Redirection to page once the game is finished|Unexpectedly redirected to 404 error page               |Use template literals and different location function (replace) to redirect to correct URL.|
+|002        |Answer questions on game page            |Game eventually starts to slow down/crash               |Remove multiple usages of restartInterval function which was causing recursion issues.      |
 |003        |Press play again button                  |Not redirected to respective difficulty level game page |Use template literals include correct difficulty level.                                    |
