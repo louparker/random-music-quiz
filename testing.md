@@ -10,7 +10,7 @@
 
 -----
 
-Throughout the development of this project, various proactive testing was done. With HTML & CSS links were checked and syntax was dynamically corrected. With JavaScript, functions were console logged to check functionality and if the results were as expected. Once the project was near completion, another more thorough round of testing begun. This included:
+Throughout the development of this project, various proactive testing was done. With HTML & CSS, links were checked and syntax was dynamically corrected. With JavaScript, each function was console logged to check functionality and if the results were as expected. Once the project was near completion, another more thorough round of testing begun. This included:
 
 -----
 
