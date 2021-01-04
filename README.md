@@ -4,7 +4,7 @@
 
 # Project Description
 
-“The most random music quiz” (henceforth to be shortened to “TMRMQ”) is a quiz app in which the player answers 10 randomized questions within 3 difficulty levels & can then save their high score to a specific page that can be viewed at their leisure. The question and answer data is pulled from the “Open Trivia Database” API and fed into the app using Javascript. The name stems from the questions being wide-ranging and varied within the music world.
+“The Most Random Music Quiz” is a quiz app in which the player answers 10 randomized questions within 3 difficulty levels & can then save their high score to a specific page that can be viewed at their leisure. The question and answer data is pulled from the “Open Trivia Database” API and fed into the app using Javascript. The name stems from the questions being wide-ranging and varied within the music world.
 
 Below is a live link to the site which is hosted on GitHub Pages.
 [HERE](https://louparker.github.io/random-music-quiz/index.html)
@@ -60,12 +60,12 @@ The aims of this web app are as follows:
 
 ### Strategy
 
-The project aims to achieve a web app that provides value as a fun and interactive experience to all users, with a focus on ease of use, smooth functionality a unique look. When considering the target audience, the following owner and user stories were compiled.
+The project aims to achieve a web app that provides value as a fun and interactive experience to all users, with a focus on ease of use, smooth functionality and a unique look. When considering the target audience, the following owner and user stories were compiled.
 
 ### Owner Stories
 
 
--   As the site owner, I want to provide a rich interactive experience to anyone that tries the game enough to make them want to play more.
+-   As the site owner, I want to provide a rich interactive experience to anyone that tries the game. Enough to make them want to play more.
 -   As the site owner, I want to demonstrate new skills within JS & offer evidence of current skill level in HTML and CSS.
 -   As the site owner, I want all elements of the game to function properly to provide full immersion.
 
@@ -76,10 +76,10 @@ The project aims to achieve a web app that provides value as a fun and interacti
 -   As a site user, I want to get some sort of feedback when answering questions correct or incorrect.
 -   As a site user, I want to have a clear view of my score and how much time is left for each question.
 -   As a site user, I want to be able to understand the rules easily and not have to go back to read them.
--   As a site user, I want all buttons to be sematic so I don’t have to press anything to “see what it does”.
+-   As a site user, I want all buttons to be semantic so I don’t have to press anything to “see what it does”.
 -   As a site user, I want to be able to check my high-scores whenever I want.
--   As a site user, I want to be able to exit the game when playing for whatever reason
--   As a site user, I want to be able to choose a harder difficulty level to be top on all the high-score leaderboards
+-   As a site user, I want to be able to exit the game when playing for whatever reason.
+-   As a site user, I want to be able to choose a harder difficulty level to be top on all the high-score leader-boards.
 -   As a site user, I want the whole app to be easy to grasp so it is easy to show off.
 
 ### Scope
@@ -115,7 +115,7 @@ At this point, wireframes were created to have a visible reference point for the
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-home.png)
 - [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/balsamiq/index.png)
 
-The structure of this page as the home page is shared by most other pages in the web app. Actionable buttons on the lower half and information that needs to be taken in in the upper half of the page. Also due to the mobile-first design ethos, the information is displayed in order of priority, top-down. This concept will also continue throughout the web app.
+The structure of this page as the home page is shared by most other pages in the web app. Actionable buttons on the lower half and information that needs to be taken in, in the upper half of the page. Also due to the mobile-first design ethos, the information is displayed in order of priority, top-down. This concept will also continue throughout the web app.
 
 #### GAME PAGE
 
@@ -123,7 +123,7 @@ The structure of this page as the home page is shared by most other pages in the
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-game.png)
 - [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/balsamiq/game.png)
 
-This page starts with a Heads up display (HUD) which is familiar in most games, it is where all information to do with the ongoing status of the game is displayed. For this game specifically, score, time left and an exit button is included in the HUD. This is then followed by the question in the middle of the page, this is a good spot considering the priority of the current question, it is one of the first places the eyes will look. After this, there are the answer option buttons.
+This page starts with a Heads up display (HUD) which is familiar in most games, it is where all information to do with the ongoing status of the game is displayed. For this game specifically, score, time left (not shown as added later) and an exit button is included in the HUD. This is then followed by the question in the middle of the page, this is a good spot considering it is the first priority of the page and it is one of the first places the eyes will look. After this, there are the answer option buttons.
 
 #### GAMEOVER PAGE
 
@@ -131,7 +131,7 @@ This page starts with a Heads up display (HUD) which is familiar in most games, 
 - [Tablet](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/tablet/balsamiq/tab-bal-gameover.png)
 - [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/balsamiq/gameover.png)
 
-This page continues the simple information followed by the actionable content concept. The score here is the priority content so it is placed in the middle followed by the actionable input and buttons.
+This page continues the simple, information followed by the actionable content concept. The score here is the priority content so it is placed in the middle of the page followed by the actionable input and buttons.
 
 #### HIGHSCORES PAGE
 
@@ -153,7 +153,7 @@ I wanted the font to be something unusual, informal and unique. It needed to be 
 
 ### Color
 
-The colours for this web app needed to be quite bold and convey differing messages. Answer choices each have their colour, priority info (question, score & HUD) all have the same colour background. There is was also a need to have good contrast for all elements which the chosen colours do provide.
+The colours for this web app needed to be quite bold and convey differing messages. Answer choices each have their colour, priority info (question, score & HUD) all have the same colour background. There was also a need to have good contrast for all elements which the chosen colours do provide.
 
 ![screenshot of color palette](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/palette.png)
 
@@ -167,8 +167,8 @@ The colours for this web app needed to be quite bold and convey differing messag
 
 In the final version, the following changes were made:
 - Colors were darkened to increase contrast for accessibility.
-- Dividing horizontal lines were added between rules to increase visual separation.
-- Highscores button was added underneath game buttons.
+- Dividing horizontal lines were added between each rule to increase visual separation.
+- A high-scores button was added underneath game buttons.
 
 #### GAME PAGE
 
@@ -189,7 +189,7 @@ In the final version, the following changes were made:
 - [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/xd/gameover%20xd.png)
 
 In the final version, the following changes were made:
-- name input box was added.
+- Input box for player name was added.
 - Button containers adjusted in size.
 - Heading title colour darkened.
 
@@ -200,7 +200,7 @@ In the final version, the following changes were made:
 - [Mobile](https://github.com/louparker/random-music-quiz/blob/main/assets/images/readme%20images/wireframes/mobile/xd/highscores%20xd.png)
 
 In the final version, the following changes were made:
-- Further high score container boxes were added for respective levels.
+- Further high-score container boxes were added for respective levels.
 - Heading title colour darkened.
 
 ### Design Wrap-Up
@@ -213,7 +213,7 @@ I wanted the site to provide a quite simple but fresh feeling to the user. The d
 
 ### Level Select on homepage
 
-Within the home page, the user can choose a difficulty level. This was done to increase the accessibility of the game but also to increase the playability and keep people coming back to play more.
+Within the home page, the user can choose a difficulty level. This was done to increase the accessibility (in terms of knowledge of music) of the game but also to increase the playability and keep people coming back to play.
 
 ### Animations on home page buttons
 
@@ -225,7 +225,7 @@ This button is important as it gives players an easy way to either restart or co
 
 ### Timer on the game page
 
-The timer is an important game feature which adds pressure to the players game experience. It is restarted whenever a question is answered or when it reaches zero.
+The timer is an important game feature which adds pressure to the players game experience. It is restarted whenever a question is answered and the game ends when it reaches zero.
 
 ### Score counter on the game page
 
@@ -241,7 +241,7 @@ The animations on the game page serve to let the player know if their chosen ans
 
 ### Save score on game-over page
 
-The save button on the game-over page allows the player to save their score in local storage. If it is amongst the top 5 scores for each level then it will be displayed on the high scores page.
+The save button on the game-over page allows the player to save their score in browsers local storage. If it is amongst the top 5 scores for each level then it will be displayed on the high scores page.
 
 ### Max Length on Gameover Page Input
 
@@ -284,7 +284,7 @@ Testing documentation can be found [HERE](testing.md)
 
 ## Deployment
 
-The site was developed in my own environment, I used VSCode as my code editor of choice & regularly used Git through a VSCode extension to commit and push changes to the project. I decided to use VSCode over Gitpod (as I have used in previous projects and as is recommended by Code Institute) since I am quite comfortable with using it and the Git extension made it very easy to incorporate version control and regular commits into my workflow. It is also a very widely used professional IDE which encourages me to spend as much time with it as I can now while I am still learning. The steps to deploy the project onto GitHub Pages from its GitHub repository are listed below.
+The site was developed in my own environment, I used VSCode as my code editor of choice & regularly used Git through a VSCode extension to commit and push changes to the repository. I decided to use VSCode over Gitpod (as I have used in previous projects and as is recommended by Code Institute) since I am quite comfortable with using it and the Git extension made it very easy to incorporate version control and regular commits into my workflow. It is also a very widely used professional IDE which encourages me to spend as much time with it as I can now while I am still learning. The steps to deploy the project onto GitHub Pages from its GitHub repository are listed below.
 
 1. Log in to GitHub.
 2. Select louparker/random-music-quiz from the list of repositories to the left of the screen.
